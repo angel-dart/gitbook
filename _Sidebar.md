@@ -1,3 +1,3 @@
-[Home](https://github.com/angel-dart/angel/wiki)
+**[Home](https://github.com/angel-dart/angel/wiki)**
 
-[Getting Started](https://github.com/angel-dart/angel/wiki/Getting-Started)
+**[Getting Started](https://github.com/angel-dart/angel/wiki/Getting-Started)**
