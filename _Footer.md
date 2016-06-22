@@ -1,3 +1,3 @@
 Created by [@thosakwe](https://twitter.com/thosakwe)
 
-Blog: [here](http://blog.thosakwe.com)
+[Visit my Blog!](http://blog.thosakwe.com)
