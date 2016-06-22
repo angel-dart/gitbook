@@ -21,6 +21,7 @@ Plug-ins
 * [Authentication](https://github.com/angel-dart/angel/wiki/Authentication)
 * [WebSockets](https://github.com/angel-dart/angel/wiki/WebSockets)
 * [Server-sent Events](https://github.com/angel-dart/angel/wiki/Server--sent-Events)
+* [Pagination](https://github.com/angel-dart/angel/wiki/Pagination)
 
 Advanced
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
