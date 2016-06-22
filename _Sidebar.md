@@ -16,6 +16,7 @@ Services
 Plug-ins
 * [Static Files](https://github.com/angel-dart/angel/wiki/Static-Files)
 * [Configuration](https://github.com/angel-dart/angel/wiki/Configuration)
+* [Jade](https://github.com/angel-dart/angel/wiki/Jade)
 * [Mustache](https://github.com/angel-dart/angel/wiki/Mustache)
 * [Hart](https://github.com/angel-dart/angel/wiki/Hart)
 * [MongoDB](https://github.com/angel-dart/angel/wiki/MongoDB)
