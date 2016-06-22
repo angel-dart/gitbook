@@ -1,9 +1,11 @@
 # Middleware
 
-Sometimes, it becomes to recycle code to run on multiple routes. Angel allows for this in the form of *middleware*. Middleware are frequently used as authorization filters, or to serialize database data for use in subsequent routes. Middleware in Angel can be any route handler, whether a function or arbitrary data.
+Sometimes, it becomes to recycle code to run on multiple routes. Angel allows for this in the form of *middleware*. Middleware are frequently used as authorization filters, or to serialize database data for use in subsequent routes. Middleware in Angel can be any route handler, whether a function or arbitrary data. You can also throw exceptions in middleware.
 
-## Denying Middleware
+## Denying Requests via Middleware
 A middleware should return either `true` or `false`. If `false` is returned, no further routes will be executed. If `true` is returned, route evaluation will continue.
+
+As you can imagine, this is perfect for authorization filters.
 
 ## Declaring Middleware
 
