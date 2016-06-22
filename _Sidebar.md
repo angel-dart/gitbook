@@ -11,6 +11,7 @@ Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In--Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
+* [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 
 Plug-ins
 * [Static Files](https://github.com/angel-dart/angel/wiki/Static-Files)
