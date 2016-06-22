@@ -3,13 +3,13 @@ The Basics
 * [Requests & Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
 * [Basic Routing](https://github.com/angel-dart/angel/wiki/Basic-Routing)
 * [Middleware](https://github.com/angel-dart/angel/wiki/Middleware)
-* [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug--ins)
+* [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 * [Client Use](https://github.com/angel-dart/angel/wiki/Client-Use)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
-* [In-Memory](https://github.com/angel-dart/angel/wiki/In--Memory)
+* [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 
@@ -22,7 +22,7 @@ Plug-ins
 * [Swagger](https://github.com/angel-dart/angel/wiki/Swagger)
 * [Authentication](https://github.com/angel-dart/angel/wiki/Authentication)
 * [WebSockets](https://github.com/angel-dart/angel/wiki/WebSockets)
-* [Server-sent Events](https://github.com/angel-dart/angel/wiki/Server--sent-Events)
+* [Server-sent Events](https://github.com/angel-dart/angel/wiki/Server-sent-Events)
 * [Pagination](https://github.com/angel-dart/angel/wiki/Pagination)
 
 Advanced
