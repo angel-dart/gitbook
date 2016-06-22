@@ -1,3 +1,4 @@
-**[Home](https://github.com/angel-dart/angel/wiki)**
+[Home](https://github.com/angel-dart/angel/wiki)
 
-**[Getting Started](https://github.com/angel-dart/angel/wiki/Getting-Started)**
+The Basics
+* [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
