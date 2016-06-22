@@ -7,8 +7,8 @@ The Basics
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 
 Services
-* [Service Basics]](https://github.com/angel-dart/angel/wiki/Service-Basics)
-* [In-Memory](](https://github.com/angel-dart/angel/wiki/In--Memory)
+* [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
+* [In-Memory](https://github.com/angel-dart/angel/wiki/In--Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 
 Plug-ins
