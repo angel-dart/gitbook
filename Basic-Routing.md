@@ -32,7 +32,7 @@ Angel app = new Angel();
 app.get('/', 'Hello!');
 
 Routable subApp = new Routable();
-subApp.get('/, 'Subroute');
+subApp.get('/', 'Subroute');
 
 app.use('/sub', subApp);
 
