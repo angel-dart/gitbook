@@ -5,6 +5,7 @@ The Basics
 * [Middleware](https://github.com/angel-dart/angel/wiki/Middleware)
 * [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug--ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
+* [Client Use](https://github.com/angel-dart/angel/wiki/Client-Use)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
@@ -25,4 +26,5 @@ Plug-ins
 
 Advanced
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
+* [Advanced Routing](https://github.com/angel-dart/angel/wiki/Advanced-Routing)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/1.0.0-dev)
