@@ -23,4 +23,5 @@ Plug-ins
 * [Server-sent Events](https://github.com/angel-dart/angel/wiki/Server--sent-Events)
 
 Advanced
+* [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/1.0.0-dev)
