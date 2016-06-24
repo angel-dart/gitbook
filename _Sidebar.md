@@ -5,7 +5,7 @@ The Basics
 * [Middleware](https://github.com/angel-dart/angel/wiki/Middleware)
 * [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
-* [Client Use](https://github.com/angel-dart/angel/wiki/Client-Use)
+* [REST Client](https://github.com/angel-dart/angel_client)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
