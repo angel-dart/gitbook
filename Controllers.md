@@ -88,10 +88,11 @@ class HelloController extends Controller {
 You can use middleware to de/serialize data to be processed in a controller method.
 
 ```dart
-deserializeUser(RequestContext req, res) async {
+Future<bool> deserializeUser(RequestContext req, res) async {
   var id = req.params['id'].toString();
+  req.params['user'] = await asyncFetchUser(id);
 
-  return await asyncFetchUser(id);
+  return true;
 }
 
 @Expose("/user", middleware: const["deserialize_user"]
