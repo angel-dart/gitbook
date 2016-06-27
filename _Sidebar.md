@@ -3,6 +3,7 @@ The Basics
 * [Requests & Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
 * [Basic Routing](https://github.com/angel-dart/angel/wiki/Basic-Routing)
 * [Middleware](https://github.com/angel-dart/angel/wiki/Middleware)
+* [Controllers](https://github.com/angel-dart/angel/wiki/Controllers)
 * [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 * [REST Client](https://github.com/angel-dart/angel_client)
