@@ -95,7 +95,7 @@ Future<bool> deserializeUser(RequestContext req, res) async {
   return true;
 }
 
-@Expose("/user", middleware: const["deserialize_user"]
+@Expose("/user", middleware: const["deserialize_user"])
 class UserController extends Controller {
 
   @Expose("/:id/name")
