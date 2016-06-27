@@ -2,8 +2,27 @@
 
 Angel has built-in, reflection-based support for MVC controllers. This is yet another way to define routes in a manageable group. You can also use a `Service`, an `Angel` instance, or the base `Routable` class.
 
+```dart
+import 'package:angel_framework/angel_framework.dart';
+
+@Expose("/todos")
+class TodoController extends Controller {
+
+  @Expose("/:id")
+  getTodo(int id) async {
+    return await someAsyncAction();
+  }
+}
+
+main() async {
+  Angel app = new Angel();
+  await app.configure(new TodoController());
+}
+```
+
 Rather than extending from `Routable`, controllers return an `AngelConfigurer` when called. This configurer will wire all your routes for you.
 
+# @Expose()
 The glue that holds it all together is the `Expose` annotation:
 
 ```dart
@@ -22,11 +41,14 @@ class Expose {
 }
 ```
 
+# Allowing Null Values
 Most fields are self-explanatory, save for `as` and `allowNull`. See, request parameters are mapped to function parameters on each handler. If a parameter is `null`, an error will be thrown. To prevent this, you can pass its name to `allowNull`.
 
 ```dart
 @Expose("/foo/:id?", allowNull: const["id"])
 ```
+
+# Named Controllers and Actions
 
 The other is `as`. This allows you to specify a custom name for a controller class or action. `ResponseContext` contains a method, `redirectToAction` that can redirect to a controller action.
 
@@ -47,23 +69,7 @@ main() async {
 
 If you do not specify an `as`, then controllers and actions will be available by their names in code. Reflection is cool, huh?
 
-```dart
-import 'package:angel_framework/angel_framework.dart';
-
-@Expose("/todos")
-class TodoController extends Controller {
-
-  @Expose("/:id")
-  getTodo(int id) async {
-    return await someAsyncAction();
-  }
-}
-
-main() async {
-  Angel app = new Angel();
-  await app.configure(new TodoController());
-}
-```
+# Interacting with Requests and Responses
 
 Controllers can also interact with requests and responses. All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
 
@@ -75,6 +81,9 @@ class HelloController extends Controller {
     await res.render("hello");
   }
 }
+```
+
+# Transforming Data
 
 You can use middleware to de/serialize data to be processed in a controller method.
 
