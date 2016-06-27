@@ -70,5 +70,8 @@ Controllers can also interact with requests and responses. All you have to do is
 ```dart
 @Expose(path: "/hello")
 class HelloController extends Controller {
-  @Expose(path: "/") Future getIndex(ResponseContext res) async => await res.render("hello");
+  @Expose(path: "/")
+  Future getIndex(ResponseContext res) async {
+    await res.render("hello");
+  }
 }
