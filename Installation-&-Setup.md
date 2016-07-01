@@ -26,15 +26,18 @@ import 'package:angel_framework/angel_framework.dart';
 main() async {
   Angel app = new Angel();
 
+  app.get("/", "Hello, world!");
+
   await app.startServer(InternetAddress.LOOPBACK_IP_V4, 3000);
   print("Angel server listening on localhost:3000");
 }
 ```
 
-The specifics are not that important, but there are two important calls here:
+The specifics are not that important, but there are three important calls here:
 
 1. `Angel app = new Angel()` - The Angel API is manifested a class, and we need an instance of it to run our server.
-2. `await app.startServer(...)` - This asynchronous call is what actually starts the server listening.
+2. `app.get("/", "Hello, world!");` - This is a [route](https://github.com/angel-dart/angel/wiki/Basic-Routing), and tells our server to respond to all GET requests at our server root with `"Hello, world!"`. The response will automatically be encoded as JSON.
+3. `await app.startServer(...)` - This asynchronous call is what actually starts the server listening.
 
 You might consider wrapping this in a call to `runZoned`, so your server does not crash on errors.
 
