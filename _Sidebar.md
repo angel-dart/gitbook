@@ -20,6 +20,7 @@ Plug-ins
 * [Jade](https://github.com/angel-dart/angel_jade)
 * [Mustache](https://github.com/angel-dart/angel_mustache)
 * [Hart](https://github.com/angel-dart/angel_hart)
+* [HAML](https://github.com/angel-dart/angel_haml)
 * [MongoDB](https://github.com/angel-dart/angel_mongo)
 * [Swagger](https://github.com/angel-dart/angel_swagger)
 * [Authentication](https://github.com/angel-dart/angel_auth)
