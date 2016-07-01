@@ -59,6 +59,21 @@ class MyService extends Service {
 }
 ```
 
+Additionally, when accessed by a client, `params` will contain a field called `provider`.
+
+```dart
+class MyService extends Service {
+  @override
+  create(data, [Map params]) async {
+    if (params != null || params['provider' == null) {
+       // Accessed via server
+    }
+  }
+}
+```
+
+`provider` will be a `Providers` class, whose `String via` will tell you where the service is being accessed from, i.e. `'REST'` or '`Websockets'`.
+
 # Mounting Services
 As mentioned above, services extend `Routable`, so you can simply `app.use()` them. You can also supplement them with additional routes or middleware, placed *before* the mounting of a service:
 
