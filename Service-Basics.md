@@ -2,9 +2,9 @@
 
 One of the main concepts within Angel, which is borrowed from FeathersJS, is a *service*. You more than likely have already dealt with another implementation of the service concept. In Angel, a *service* is a class that acts as a Web interface and exposes CRUD actions operating on a set of data. Angel services extend `Routable`, and thus can be mounted on a certain path and become REST endpoints.
 
-The Angel core includes the `Service` base class, as well as two in-memory service classes. The `angel_mongo` package includes two service classes that let you interact with a database without writing complex code yourself.
+The Angel core includes the `Service` base class, as well as two in-memory service classes. The [`angel_mongo`](https://github.com/angel-dart/angel_mongo) package includes two service classes that let you interact with a database without writing complex code yourself.
 
-Services can also be filtered or reacted to with hooks, which is covered in the next topic.
+Services can also be filtered or reacted to with hooks, which is covered in the [this topic](https://github.com/angel-dart/angel/wiki/Hooks).
 
 A service looks like this:
 
