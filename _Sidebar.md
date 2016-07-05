@@ -19,16 +19,12 @@ Services
 Plug-ins
 * [Static Files](https://github.com/angel-dart/angel_static)
 * [Configuration](https://github.com/angel-dart/angel_configuration)
-* [Jade](https://github.com/angel-dart/angel_jade)
 * [Mustache](https://github.com/angel-dart/angel_mustache)
-* [Hart](https://github.com/angel-dart/angel_hart)
-* [HAML](https://github.com/angel-dart/angel_haml)
 * [MongoDB](https://github.com/angel-dart/angel_mongo)
 * [Swagger](https://github.com/angel-dart/angel_swagger)
 * [Authentication](https://github.com/angel-dart/angel_auth)
 * [WebSockets](https://github.com/angel-dart/angel_websocket)
-* [Server-sent Events](https://github.com/angel-dart/angel/wiki/Server-sent-Events)
-* [Pagination](https://github.com/angel-dart/angel/wiki/Pagination)
+* [Pagination & Sorting](https://github.com/angel-dart/angel_sort)
 
 Advanced
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
