@@ -83,5 +83,5 @@ app.get("/user/:id/todos", (req, res) async => someAction()));
 // Another way to apply a middleware to a service
 app.all("/user/*", 'some middleware', middleware: ['some', 'more', 'middleware']);
 
-app.use('/user/', new MongoTypedService<User>(db.collection("users")));
+app.use('/user', new MongoTypedService<User>(db.collection("users")));
 ```
