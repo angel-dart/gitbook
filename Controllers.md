@@ -55,7 +55,7 @@ The other is `as`. This allows you to specify a custom name for a controller cla
 ```dart
 @Expose("/foo")
 class FooController extends Controller {
-  @Expose("/some/strange/url", as: "bar")
+  @Expose("/some/strange/url/:id", as: "bar")
   someActionWithALongNameThatWeWouldLikeToShorten(int id) async {
   }
 }
