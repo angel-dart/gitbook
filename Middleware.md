@@ -12,6 +12,7 @@ As you can imagine, this is perfect for authorization filters.
 ```dart
 app.get('/', 'world!', middleware: [(req, res) {
   res.write("Hello, ");
+  return true;
 }]);
 ```
 
