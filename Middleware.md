@@ -38,7 +38,7 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 ```
 
 ## Global Middleware
-`Routable` instances contain two arrays, `before` and `after`. You can add middleware to these to run before and after every requests, respectively. This also supports using named routes, of course.
+`Routable` instances contain two arrays, `before` and `after`. You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
 
 ```dart
 app.before.add((req, res) async => res.end());
