@@ -25,6 +25,7 @@ Plug-ins
 * [Authentication](https://github.com/angel-dart/angel_auth)
 * [WebSockets](https://github.com/angel-dart/angel_websocket)
 * [Pagination & Sorting](https://github.com/angel-dart/angel_sort)
+* [Diagnostics & Logging](https://github.com/angel-dart/angel_diagnostics)
 
 Advanced
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
