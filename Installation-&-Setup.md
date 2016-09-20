@@ -28,8 +28,8 @@ main() async {
 
   app.get("/", "Hello, world!");
 
-  await app.startServer(InternetAddress.LOOPBACK_IP_V4, 3000);
-  print("Angel server listening on localhost:3000");
+  var server = await app.startServer();
+  print("Angel server listening on port ${server.port}");
 }
 ```
 
