@@ -65,7 +65,7 @@ Additionally, when accessed by a client, `params` will contain a field called `p
 class MyService extends Service {
   @override
   create(data, [Map params]) async {
-    if (params != null || params['provider'] == null) {
+    if (params == null || params['provider'] == null) {
        // Accessed via server
     }
   }
