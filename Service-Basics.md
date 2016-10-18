@@ -55,7 +55,7 @@ Future<bool> myMiddleware(RequestContext req, res) async {
 @Middleware(const [myMiddleware])
 class MyService extends Service {
   // Responds with "['bar']"
-  @override index([Map params]) => [params['foo']];
+  @override index([Map params]) async => [params['foo']];
 }
 ```
 
