@@ -44,7 +44,7 @@ class MyService extends Service {
 ```
 
 # Service Parameters and Middleware.
-You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP (i.e., not over Websockets), `req.query` is passed here. To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
+You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP (i.e., not over Websockets), `req.query` or `req.body` is passed here (`query` for `index`, `read` and `delete`, `body` for `create`, `update` and `modify`). To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
 
 ```dart
 Future<bool> myMiddleware(RequestContext req, res) async {
