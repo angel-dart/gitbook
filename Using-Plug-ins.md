@@ -18,7 +18,6 @@ plugin(Angel app) async {
 main() async {
   Angel app = new Angel();
   await app.configure(plugin);
-
-  HttpServer server = await app.startServer(InternetAddress.LOOPBACK_IP_V4, 3000);
+  await app.startServer();
 }
 ```
