@@ -1,6 +1,6 @@
 # Custom Services
 
-Assuming you have already read [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics), the process of implementing you own service is very straightforward. Simply implement the methods you want to expose.
+Assuming you have already read [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics), the process of implementing your own service is very straightforward. Simply implement the methods you want to expose.
 
 By default, a service will throw a `405 Method Not Allowed` error if you haven't written any logic to handle a given method. This means you only need to write handlers for operations you plan to actually have carried out.
 
