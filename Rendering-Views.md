@@ -32,7 +32,6 @@ Future plugin(Angel app) async {
 main() async {
   Angel app = new Angel();
   await app.configure(plugin);
-
   await app.startServer();
 }
 ```
