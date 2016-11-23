@@ -18,6 +18,16 @@ class SomeClass {
 }
 ```
 
+You can also inject within a `RequestContext`.
+
+```dart
+// Inject types
+req.inject(Todo, someTodoInstanceSingleton);
+
+// Or by name
+req.inject('database', await databaseProvider.connect('proto://conn-string'));
+```
+
 ## In Routes and Controllers
 
 ```dart
