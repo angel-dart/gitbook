@@ -21,6 +21,6 @@ main() {
 
 For more information, see the API docs.
 
-[RequestContext](https://www.dartdocs.org/documentation/angel_framework/1.0.0-dev/angel_framework/RequestContext-class.html)
+[RequestContext](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext-class.html)
 
-[ResponseContext](https://www.dartdocs.org/documentation/angel_framework/1.0.0-dev/angel_framework/ResponseContext-class.html)
+[ResponseContext](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/ResponseContext-class.html)
