@@ -1,4 +1,4 @@
-[Examples of All Features](https://github.com/angel-dart/angel_example)
+[Examples of All Features]https://github.com/angel-example)
 
 The Basics
 * [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
@@ -8,7 +8,7 @@ The Basics
 * [Controllers](https://github.com/angel-dart/angel/wiki/Controllers)
 * [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
-* [REST Client](https://github.com/angel-dart/angel_client)
+* [REST Client](https://github.com/angel-dart/client)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
@@ -17,15 +17,23 @@ Services
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 
 Plug-ins
-* [Static Files](https://github.com/angel-dart/angel_static)
-* [Configuration](https://github.com/angel-dart/angel_configuration)
-* [Mustache](https://github.com/angel-dart/angel_mustache)
-* [MongoDB](https://github.com/angel-dart/angel_mongo)
-* [Swagger](https://github.com/angel-dart/angel_swagger)
-* [Authentication](https://github.com/angel-dart/angel_auth)
-* [WebSockets](https://github.com/angel-dart/angel_websocket)
-* [Pagination & Sorting](https://github.com/angel-dart/angel_sort)
-* [Diagnostics & Logging](https://github.com/angel-dart/angel_diagnostics)
+* [Static Files](https://github.com/angel-dart/static)
+* [Configuration](https://github.com/angel-dart/configuration)
+* [Mustache](https://github.com/angel-dart/mustache)
+* [MongoDB](https://github.com/angel-dart/mongo)
+* [Swagger](https://github.com/angel-dart/swagger_codegen)
+* [Authentication](https://github.com/angel-dart/auth)
+* [WebSockets](https://github.com/angel-dart/websocket)
+* [Pagination & Sorting](https://github.com/angel-dart/sort)
+* [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
+* [CORS](https://github.com/angel-dart/cors)
+* [Standalone Router]()
+* [Shelf Interop]()
+* [Testing Helpers]()
+* [SQL]()
+* [Trestle]()
+* [Scaling]()
+* [Seeding]()
 
 Advanced
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
