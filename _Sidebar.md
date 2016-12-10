@@ -10,6 +10,7 @@ The Basics
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 * [REST Client](https://github.com/angel-dart/client)
 * [Testing Helpers](https://github.com/angel-dart/test)
+* [Error Handling](https://github.com/angel-dart/errors)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
@@ -36,6 +37,5 @@ Plug-ins
 * [Seeding](https://github.com/angel-dart/seeder)
 
 Advanced
-* [Error Handling](https://github.com/angel-dart/errors)
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)
