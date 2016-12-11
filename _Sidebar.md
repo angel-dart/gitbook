@@ -10,7 +10,7 @@ The Basics
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 * [REST Client](https://github.com/angel-dart/client)
 * [Testing Helpers](https://github.com/angel-dart/test)
-* [Error Handling](https://github.com/angel-dart/errors)
+* [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
