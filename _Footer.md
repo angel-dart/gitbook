@@ -1,3 +1,3 @@
-Created by [@_wapaa_](https://twitter.com/_wapaa_)
+Created by [@thosakwe](https://github.com/thosakwe)
 
 [Visit my Blog!](http://blog.thosakwe.com)
