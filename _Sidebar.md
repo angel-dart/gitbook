@@ -25,7 +25,7 @@ Plug-ins
 * [CORS](https://github.com/angel-dart/cors)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [MongoDB](https://github.com/angel-dart/mongo)
-* [Mustache](https://github.com/angel-dart/mustache)
+* [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
