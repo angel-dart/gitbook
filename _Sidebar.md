@@ -19,22 +19,15 @@ Services
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 
 Plug-ins
-* [Static Files](https://github.com/angel-dart/static)
-* [Configuration](https://github.com/angel-dart/configuration)
-* [Mustache](https://github.com/angel-dart/mustache)
-* [MongoDB](https://github.com/angel-dart/mongo)
-* [Swagger](https://github.com/angel-dart/swagger_codegen)
 * [Authentication](https://github.com/angel-dart/auth)
-* [WebSockets](https://github.com/angel-dart/websocket)
-* [Pagination & Sorting](https://github.com/angel-dart/sort)
-* [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
+* [Configuration](https://github.com/angel-dart/configuration)
 * [CORS](https://github.com/angel-dart/cors)
+* [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
+* [MongoDB](https://github.com/angel-dart/mongo)
+* [Mustache](https://github.com/angel-dart/mustache)
+* [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Standalone Router](https://github.com/angel-dart/route)
-* [Shelf Interop](https://github.com/angel-dart/shelf)
-* [SQL](https://github.com/angel-dart/sqljocky)
-* [Trestle](https://github.com/angel-dart/trestle)
-* [Scaling](https://github.com/angel-dart/multiserver)
-* [Seeding](https://github.com/angel-dart/seeder)
+* [Static Files](https://github.com/angel-dart/static)
 
 Advanced
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
