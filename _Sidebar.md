@@ -1,4 +1,4 @@
-[Examples of All Features](https://github.com/angel-example)
+[Examples Projects](https://github.com/angel-example)
 
 The Basics
 * [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
