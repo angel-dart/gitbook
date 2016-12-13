@@ -31,10 +31,23 @@ app.get('/hello', (req, res) async => foo());
 app.after.add(errors.throwError(status: 404));
 
 // This middleware will respond to any unanswered request
-// with the
-app.all('*', errors.middleware());
+// with an appropriate response.
+//
+// If there is no registered handler, then it will respond
+// as if the response has the [defaultStatus].
+//
+// This will not be run on 200 responses.
+app.all('*', errors.middleware(defaultStatus: 500));
+
+// You can also catch fatal errors.
+errors.fatalErrorHandler = (err) async => foo();
 ```
 
-
-
 ## 2. Manual error handling
+
+Angel catches errors in several different spots, so if you want to provide
+error coverage by yourself, hook the following:
+
+* `errorHandler` - Used to handle `AngelHttpException` instances. Set this by calling
+`app.onError(...)`.
+* `fatalErrorStream` - A broadcast stream, fired when responding with a `ResponseContext` fails.
