@@ -1,11 +1,5 @@
-# Getting Started
-Let's get it started, ha!
-
+# Without the Boilerplate
 It's very easy to setup a bare-bones Angel server.
-
-## Installation
-
-Firstly, ensure you have the [Dart SDK](https://www.dartlang.org/downloads/) installed.
 
 Create a file called `pubspec.yaml`. In it, include lines that look something like this. Feel free to replace 'app' with the name of your app:
 
