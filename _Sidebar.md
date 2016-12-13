@@ -2,6 +2,7 @@
 
 The Basics
 * [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
+  * [Without the Boilerplate](https://github.com/angel-dart/angel/wiki/Without-the-Boilerplate)
 * [Requests & Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
 * [Basic Routing](https://github.com/angel-dart/angel/wiki/Basic-Routing)
 * [Middleware](https://github.com/angel-dart/angel/wiki/Middleware)
