@@ -45,8 +45,10 @@ views/ - Mustache views.
 web/ - Client-side code.
 ```
 
-Finally, let's run our server! Just run the following:
+It's easy to run our server. Just type the following:
 
 ```bash
 $ angel start
 ```
+
+And there you have it - you've created an Angel application!
