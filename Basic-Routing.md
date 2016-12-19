@@ -25,16 +25,18 @@ app.post(new RegExp(r'\/todos/([A-Za-z0-9]+)'), (req, res) async => "RegExp");
 ```
 
 # Sub-Apps
-With Angel, several classes, including `Angel` and `Service`, extend a base class called `Routable`. A `Routable` contains a method, `use`, that maps all requests to a sub-path to another set of routes. For example:
+You can `mount` routers, or `use` entire sub-apps.
 
 ```dart
 Angel app = new Angel();
 app.get('/', 'Hello!');
 
-Routable subApp = new Routable();
-subApp.get('/', 'Subroute');
-
-app.use('/sub', subApp);
-
+var subRouter = new Router()..get('/', 'Subroute');
+app.mount('/sub', subApp);
 // Now, you can visit /sub and receive the message "Subroute"
+
+var subApp = new Angel()..get('/hello', 'world');
+app.use('/api', subApp);
+
+// GET /api/hello returns "world"
 ```
