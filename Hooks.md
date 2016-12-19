@@ -60,3 +60,17 @@ class HookedServiceEvent {
   void cancel(result);
 }
 ```
+
+The `Hooks` annotation can be used to assign hooks to service methods.
+
+```dart
+helloHook(e) => print('Hello, world!');
+fooHook(e) => print('Bar');
+
+@Hooks(const [helloHook])
+class MyService extends Service {
+  @Hooks(const [fooHook])
+  index([params]) async {
+    return ['world'];
+  }
+}
