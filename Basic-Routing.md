@@ -3,11 +3,11 @@ It is very to attach handlers to dynamic paths. Routes are resolved in the order
 
 The simplest routes look like this, and are self-explanatory:
 ```dart
-app.get('/', 'GET');
-app.post('/', 'POST');
-app.patch('/', 'PATCH');
-app.delete('/', 'DELETE');
-app.addRoute('PUT', '/', 'PUT');
+app.get('/', someRequestHandler);
+app.post('/', someRequestHandler);
+app.patch('/', someRequestHandler);
+app.delete('/', someRequestHandler);
+app.addRoute('PUT', '/', someRequestHandler);
 ```
 
 # Route parameters
