@@ -26,7 +26,7 @@ main() {
 ```
 
 # isJson(value)
-A `Matcher` that asserts that the given `http.Response` equals `value` when decoded as JSON.
+A `Matcher` that asserts that the given `http.Response` equals `value` when decoded as JSON. This uses `test.equals` internally, so anything that would pass that matcher passes this one.
 
 # hasStatus(status)
 A `Matcher` that asserts the given `http.Response` has the given `status` code.
