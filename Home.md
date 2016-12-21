@@ -1,3 +1,6 @@
+# The Angel Framework
+[![version: v1.0.0-alpha](https://img.shields.io/badge/pub-v1.0.0--alpha-blue.svg)](https://pub.dartlang.org/packages/angel_common)
+
 [Contribution Guidelines](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 
 [Roadmap](https://github.com/angel-dart/roadmap)
