@@ -1,3 +1,3 @@
 Created by [@thosakwe](https://github.com/thosakwe)
 
-[Visit my Blog!](http://blog.thosakwe.com)
+[Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
