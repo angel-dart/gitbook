@@ -10,10 +10,15 @@ As you can imagine, this is perfect for authorization filters.
 ## Declaring Middleware
 
 ```dart
-app.get('/', 'world!', middleware: [(req, res) {
-  res.write("Hello, ");
-  return true;
-}]);
+// Both ways ultimately accomplish the same thing
+
+app
+  .chain((req, res) {
+    res.write("Hello, ");
+    return true;
+  }).get('/', 'world!');
+
+app.get('/', 'world!', middleware: [someListOfMiddleware]);
 ```
 
 ## Named Middleware
