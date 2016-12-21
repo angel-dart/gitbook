@@ -36,4 +36,5 @@ Advanced
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
 * [Request Lifecycle](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)
 * [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
+* [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)
