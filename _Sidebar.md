@@ -27,6 +27,7 @@ Plug-ins
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [MongoDB](https://github.com/angel-dart/mongo)
 * [Mustache Templates](https://github.com/angel-dart/mustache)
+* [Response Compression](https://github.com/angel-dart/compress)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
