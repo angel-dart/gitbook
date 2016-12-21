@@ -2,6 +2,10 @@
 
 [Roadmap](https://github.com/angel-dart/roadmap)
 
+[File an Issue](https://github.com/angel-dart/roadmap/issues)
+
+[API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)
+
 There are a few server-side frameworks rising within Dart at this moment, but Angel has a different goal than all the rest. Angel aims to be a server-side framework optimized for full-stack development. Angel users should be able to write both their backends and frontends entirely in Dart, and share as much code across each platform as possible.
 
 For this to work, Angel must be flexible, and have a low learning curve. Thus, the basic API is modeled after Express, and new functionality is added via plug-ins.
