@@ -17,7 +17,7 @@ app.get('/', 'world!', middleware: [(req, res) {
 ```
 
 ## Named Middleware
-`Routable` instances allow you to assign names to middleware via `registerMiddleware`. After registering a middleware, you can include it in a route just by passing its name into the `middleware` array. If you are `use`-ing another Routable, you can map all its middleware into a namespace by passing it to the `use` call.
+`Router` instances allow you to assign names to middleware via `registerMiddleware`. After registering a middleware, you can include it in a route just by passing its name into the `middleware` array. If you are `mount`-ing another `Routable` or `Angel` instance, you can map all its middleware into a namespace by passing it to the `use` call.
 
 ```dart
 app.registerMiddleware('deny', (req, res) async => false);
@@ -42,4 +42,14 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 
 ```dart
 app.before.add((req, res) async => res.end());
+```
+
+For more complicated middleware, implement the `AngelMiddleware` class.
+
+```dart
+class MyMiddleware implements AngelMiddleware {
+  Future<bool> call(Angel app) async {
+    // Do something...
+  }
+}
 ```
