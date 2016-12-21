@@ -10,7 +10,7 @@ The Basics
 * [Using Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
 * [Rendering Views](https://github.com/angel-dart/angel/wiki/Rendering-Views)
 * [REST Client](https://github.com/angel-dart/client)
-* [Testing Helpers](https://github.com/angel-dart/test)
+* [Testing](https://github.com/angel-dart/angel/wiki/Testing)
 * [Error Handling](https://github.com/angel-dart/angel/wiki/Error-Handling)
 * [Command Line](https://github.com/angel-dart/cli)
 
