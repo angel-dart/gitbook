@@ -29,6 +29,7 @@ You'll notice that the following folder structure is there for you:
 
 ```
 .idea/ - IntelliJ metadata.
+.vscode/ - VSCode metadata.
 bin/ - Contains a script to run the application.
 config/ - Static configuration files.
 lib/
