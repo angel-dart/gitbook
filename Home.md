@@ -1,5 +1,8 @@
-# The Angel Framework
+[![The Angel Framework](https://angel-dart.github.io/images/logo.png)](https://angel-dart.github.io)
+
 [![version: v1.0.0-alpha](https://img.shields.io/badge/pub-v1.0.0--alpha-blue.svg)](https://pub.dartlang.org/packages/angel_common)
+
+**The Dart server framework that's ready for showtime.**
 
 [Contribution Guidelines](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 
