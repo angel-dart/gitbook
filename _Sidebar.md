@@ -33,10 +33,12 @@ Plug-ins
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
+* [Websockets](https://github.com/angel-dart/websocket)
 
 Advanced
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
 * [Request Lifecycle](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)
 * [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
+* [Scaling (still in the works)](https://github.com/angel-dart/multiserver)
 * [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
