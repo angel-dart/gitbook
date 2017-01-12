@@ -12,6 +12,10 @@ class TodoController extends Controller {
   getTodo(int id) async {
     return await someAsyncAction();
   }
+
+  // You can return a response handler, and have it run as well. :)
+  @Expose("/login")
+  login() => auth.authenticate('google');
 }
 
 main() async {
