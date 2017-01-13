@@ -34,6 +34,7 @@ Plug-ins
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
+* [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
 
 Advanced
