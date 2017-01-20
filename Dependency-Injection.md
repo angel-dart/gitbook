@@ -33,12 +33,17 @@ req.inject('database', await databaseProvider.connect('proto://conn-string'));
 ```dart
 app.get("/some/class/text", (SomeClass singleton) => singleton.text); // Always "foo"
 
+app.post("/foo", (SomeClass singleton, {Foo optionalInjection});
+
 @Expose("/my/controller")
 class MyController extends Controller {
 
   @Expose("/bar")
   // Inject classes from container, request parameters or the request/response context :)
   bar(SomeClass singleton, RequestContext req) => "${singleton.text} bar"; // Always "foo bar"
+
+  @Expose("/baz')
+  baz({Foo optionalInjection});
 }
 ```
 
