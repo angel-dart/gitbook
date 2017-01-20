@@ -42,7 +42,7 @@ class MyController extends Controller {
   // Inject classes from container, request parameters or the request/response context :)
   bar(SomeClass singleton, RequestContext req) => "${singleton.text} bar"; // Always "foo bar"
 
-  @Expose("/baz')
+  @Expose("/baz")
   baz({Foo optionalInjection});
 }
 ```
