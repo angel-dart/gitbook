@@ -36,7 +36,6 @@ Plug-ins
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
-* [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
@@ -54,9 +53,10 @@ Planned/In the Works
 * [Source-generated Templating](https://github.com/angel-dart/template)
 
 Advanced
+* [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
+* [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
 * [Request Lifecycle](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)
-* [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
 * [Scaling & Load Balancing](https://github.com/angel-dart/multiserver)
-* [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
-* [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
+* [Standalone Router](https://github.com/angel-dart/route)
+* [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
