@@ -22,9 +22,10 @@ Services
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
-* [MongoDB Services](https://github.com/angel-dart/mongo)
-* [SQLJocky Services](https://github.com/angel-dart/sqljocky)
-* [Trestle Services](https://github.com/angel-dart/trestle)
+* Databases
+  * [MongoDB](https://github.com/angel-dart/mongo)
+  * [SQLJocky](https://github.com/angel-dart/sqljocky)
+  * [Trestle](https://github.com/angel-dart/trestle)
 
 Plug-ins
 * [Authentication](https://github.com/angel-dart/auth)
