@@ -23,25 +23,41 @@ Services
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 
+Data Access
+* [MongoDB Services](https://github.com/angel-dart/mongo)
+
 Plug-ins
 * [Authentication](https://github.com/angel-dart/auth)
+  * [Google SSO](https://github.com/angel-dart/auth_google)
+  * [Twitter SSO](https://github.com/angel-dart/auth_twitter)
+  * [Oauth2 (generic)](https://github.com/angel-dart/auth_oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
-* [CORS](https://github.com/angel-dart/cors)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
-* [MongoDB](https://github.com/angel-dart/mongo)
 * [Mustache Templates](https://github.com/angel-dart/mustache)
-* [Response Compression](https://github.com/angel-dart/compress)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
-* [Security](https://github.com/angel-dart/security)
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
 
+Middleware/Finalizers
+* [CORS](https://github.com/angel-dart/cors)
+* [Response Compression](https://github.com/angel-dart/compress)
+* [Security](https://github.com/angel-dart/security)
+* [Shelf Interop](https://github.com/angel-dart/shelf)
+* [User Agents](https://github.com/angel-dart/user_agent)
+
+Planned/In the Works
+* [Database-Agnostic Service Relations](https://github.com/angel-dart/relations)
+* [Service Seeder](https://github.com/angel-dart/seeder)
+* [Source-generated Templating](https://github.com/angel-dart/template)
+* [SQLJocky Services](https://github.com/angel-dart/sqljocky)
+* [Trestle Services](https://github.com/angel-dart/trestle)
+
 Advanced
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
 * [Request Lifecycle](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)
 * [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
-* [Scaling](https://github.com/angel-dart/multiserver)
+* [Scaling & Load Balancing](https://github.com/angel-dart/multiserver)
 * [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
