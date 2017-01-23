@@ -25,6 +25,8 @@ Services
 
 Data Access
 * [MongoDB Services](https://github.com/angel-dart/mongo)
+* [SQLJocky Services](https://github.com/angel-dart/sqljocky)
+* [Trestle Services](https://github.com/angel-dart/trestle)
 
 Plug-ins
 * [Authentication](https://github.com/angel-dart/auth)
@@ -48,11 +50,9 @@ Middleware/Finalizers
 * [User Agents](https://github.com/angel-dart/user_agent)
 
 Planned/In the Works
-* [Database-Agnostic Service Relations](https://github.com/angel-dart/relations)
+* [Service Relations](https://github.com/angel-dart/relations)
 * [Service Seeder](https://github.com/angel-dart/seeder)
 * [Source-generated Templating](https://github.com/angel-dart/template)
-* [SQLJocky Services](https://github.com/angel-dart/sqljocky)
-* [Trestle Services](https://github.com/angel-dart/trestle)
 
 Advanced
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
