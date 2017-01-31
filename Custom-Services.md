@@ -15,6 +15,6 @@ class MyService extends Service {
 }
 ```
 
-Alternatively, considering using [service hooks](https://github.com/angel-dart/angel/wiki/Hooks). They are the preferred method of modifying Angel services because they do not depend on service implementations.
+Alternatively, consider using [service hooks](https://github.com/angel-dart/angel/wiki/Hooks). They are the preferred method of modifying Angel services because they do not depend on service implementations.
 
 *Note*: The convention for the `remove` method on services is that if `id == null`, *all entries in the store should be removed*. Obviously, this does not work very well in production, so only allow this to occur on the server side. Common service providers will disable this for clients, unless you explicitly set a flag dictating so.
