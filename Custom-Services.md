@@ -14,3 +14,5 @@ class MyService extends Service {
   }
 }
 ```
+
+*Note*: The convention for the `remove` method on services is that if `id == null`, *all entries in the store should be removed*. Obviously, this does not work very well in production, so only allow this to occur on the server side. Common service providers will disable this for clients, unless you explicitly set a flag dictating so.
