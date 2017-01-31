@@ -9,7 +9,7 @@ Requests in the Angel framework go through a relatively complex lifecycle, and t
 6. `before` and `after` are combined with the handler list.
 7. Each handler is executed.
 8. `afterProcessed` is fired with the `HttpRequest`.
-9. *All* `responseFinalizers` are run.
+9. *All* `responseFinalizers` are run, if `res.willCloseItself != true`.
 10. If `res.willCloseItself = false`, all headers, the status code and the response buffer are sent through the actual `HttpResponse`.
 11. The `HttpResponse` is closed.
 
