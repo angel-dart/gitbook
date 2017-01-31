@@ -48,6 +48,7 @@ Middleware/Finalizers
 * [User Agents](https://github.com/angel-dart/user_agent)
 
 Planned/In the Works
+* [Database-agnostic Relations](https://github.com/angel-dart/relations)
 * [Service Seeder](https://github.com/angel-dart/seeder)
 * [Source-generated Templating](https://github.com/angel-dart/template)
 
