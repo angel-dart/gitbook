@@ -6,7 +6,7 @@ Create a file called `pubspec.yaml`. In it, include lines that look something li
 ```yaml
 name: app
 dependencies:
-    angel_common: ^1.0.0-alpha
+    angel_common: ^1.0.0-beta
 ```
 
 Next, run `pub get` on the command line, or in your IDE if it has Dart support. This will install the framework and all of its dependencies.
