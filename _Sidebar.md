@@ -2,6 +2,7 @@ Navigation
 * [Home](https://github.com/angel-dart/angel/wiki)
 * [Example Projects](https://github.com/angel-example)
 * [Angel on Medium](https://medium.com/the-angel-framework)
+* [Angel on YouTube](https://www.youtube.com/playlist?list=PLl3P3tmiT-frEV50VdH_cIrA2YqIyHkkY)
 
 The Basics
 * [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
