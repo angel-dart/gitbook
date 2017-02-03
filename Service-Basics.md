@@ -87,4 +87,9 @@ app.use('/user', new MongoTypedService<User>(db.collection("users")));
 
 // Make a service global without exposing it to REST
 app.services['secret'] = new SecretService();
+
+// Access app services. Returns a HookedService if there is one, otherwise just the plain service.
+// Leading and trailing slashes are ignored.
+var service = app.service('user'); // The user service
+var service = app.service('secret'); // Not exposed to REST, but can still be used easily
 ```
