@@ -84,4 +84,7 @@ app.get("/user/:id/todos", (req, res) async => someAction()));
 app.all("/user/*", 'some middleware', middleware: ['some', 'more', 'middleware']);
 
 app.use('/user', new MongoTypedService<User>(db.collection("users")));
+
+// Make a service global without exposing it to REST
+app.services['/secret'] = new SecretService();
 ```
