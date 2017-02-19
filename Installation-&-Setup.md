@@ -40,6 +40,7 @@ lib/
     routes/ - Routing config
       controllers/ - Contains your controllers.
     services/ - Contains RESTful services.
+    validators/ - Contains validators that can validate input on the client and server sides
 test/ - Test files for services and endpoints.
 tool/ - Helper files for build/task tools, such as Grinder.
 views/ - Mustache views.
