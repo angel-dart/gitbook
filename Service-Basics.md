@@ -4,7 +4,7 @@ One of the main concepts within Angel, which is borrowed from FeathersJS, is a *
 
 The Angel core includes the `Service` base class, as well as two in-memory service classes. The [`angel_mongo`](https://github.com/angel-dart/angel_mongo) package includes two service classes that let you interact with a database without writing complex code yourself.
 
-Services can also be filtered or reacted to with hooks, which is covered in the [this topic](https://github.com/angel-dart/angel/wiki/Hooks).
+Services can also be [filtered or reacted to with *service hooks*](https://github.com/angel-dart/angel/wiki/Hooks).
 
 A service looks like this:
 
