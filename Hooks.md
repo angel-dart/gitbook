@@ -65,9 +65,11 @@ class HookedServiceEvent {
 var service = app.service('api/todos') as HookedService;
 
 service.afterCreated.listen((HookedServiceEvent e) {
-  // In an `after` hook, `e.result` would be the created data. In this case, it is a Todo object.
+  // In an `after` hook, `e.result` would be the created data.
+  //In this case, it is a Todo object.
+
   if (!e.result.completed) {
-    e.cancel({'error': 'Hey, you still have to ${e.text}'});
+    e.cancel({'error': 'Hey, you still have to ${e.text}!'});
   }
 });
 ```
