@@ -67,8 +67,10 @@ var service = app.service('api/todos') as HookedService;
 service.afterCreated.listen((HookedServiceEvent e) {
   // In an `after` hook, `e.result` would be the created data.
   //In this case, it is a Todo object.
-
   if (!e.result.completed) {
+    // Use `cancel` to prematurely end an event. In this case,
+    // the following response will be given, rather than a
+    // JSON-serialized Todo instance:
     e.cancel({'error': 'Hey, you still have to ${e.text}!'});
   }
 });
