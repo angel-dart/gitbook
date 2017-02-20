@@ -61,6 +61,17 @@ class HookedServiceEvent {
 }
 ```
 
+```dart
+var service = app.service('api/todos') as HookedService;
+
+service.afterCreated.listen((HookedServiceEvent e) {
+  // In an `after` hook, `e.result` would be the created data. In this case, it is a Todo object.
+  if (!e.result.completed) {
+    e.cancel({'error': 'Hey, you still have to ${e.text}'});
+  }
+});
+```
+
 Alternatively, the `Hooks` annotation can be used to assign hooks to service methods.
 
 ```dart
