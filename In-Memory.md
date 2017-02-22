@@ -1,8 +1,9 @@
 The simplest data store to set up is an in-memory one, as it does not require external database setup.
+It only stores Maps, but it can be wrapped in a TypedService.
 
 ```dart
 // routes.dart
-app.use('/todos', new MemoryService<Todo>());
+app.use('/todos', new TypedService<Todo>(new MemoryService()));
 
 // todo.dart
 class Todo extends Model {
