@@ -15,5 +15,3 @@ class Todo extends Model {
   }
 }
 ```
-
-By version `1.1.0`, memory services will be able to run on both the server and client sides.
