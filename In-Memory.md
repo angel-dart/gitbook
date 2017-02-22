@@ -3,7 +3,7 @@ It only stores Maps, but it can be wrapped in a TypedService.
 
 ```dart
 // routes.dart
-app.use('/todos', new TypedService<Todo>(new MemoryService()));
+app.use('/todos', new TypedService<Todo>(new MapService()));
 
 // todo.dart
 class Todo extends Model {
