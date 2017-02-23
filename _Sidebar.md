@@ -27,6 +27,7 @@ Services
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
+* [Database-agnostic Relations](https://github.com/angel-dart/relations)
 * Databases
   * [MongoDB](https://github.com/angel-dart/mongo)
   * [SQLJocky](https://github.com/angel-dart/sqljocky)
@@ -41,6 +42,7 @@ Plug-ins
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
+* [Service Seeder](https://github.com/angel-dart/seeder)
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
@@ -51,11 +53,6 @@ Middleware/Finalizers
 * [Security](https://github.com/angel-dart/security)
 * [`shelf` Integration](https://github.com/angel-dart/shelf)
 * [User Agents](https://github.com/angel-dart/user_agent)
-
-Planned/In the Works
-* [Database-agnostic Relations](https://github.com/angel-dart/relations)
-* [Service Seeder](https://github.com/angel-dart/seeder)
-* [Source-generated Templating](https://github.com/angel-dart/template)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
