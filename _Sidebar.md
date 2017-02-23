@@ -23,6 +23,7 @@ The Basics
 
 Services
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
+* [TypedService](https://github.com/angel-dart/angel/wiki/TypedService)
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
