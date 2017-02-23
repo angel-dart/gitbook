@@ -12,6 +12,10 @@ class Foo extends Model {
 
 // foo_service.dart
 app.use('/foo', new TypedService<Foo>(new RethinkService(conn, r.table('foo')));
+
+// blah_blah_blah.dart
+Foo foo = await app.service('foo').create({'bar': 'baz'});
+Foo otherFoo = await app.service('foo').create(new Foo(bar: 'quux'));
 ```
 
 As a bonus, `Model` classes can be used on the client and server sides of your application. Hurrah!
