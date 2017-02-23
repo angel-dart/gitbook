@@ -28,10 +28,10 @@ Services
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
 * [Database-agnostic Relations](https://github.com/angel-dart/relations)
-* Databases
+* Database Adapters
   * [MongoDB](https://github.com/angel-dart/mongo)
-  * [SQLJocky](https://github.com/angel-dart/sqljocky)
-  * [Trestle](https://github.com/angel-dart/trestle)
+  * [RethinkDB](https://github.com/angel-dart/rethink)
+  * [PostgreSQL](https://github.com/angel-dart/postgres)
 
 Plug-ins
 * [Authentication](https://github.com/angel-dart/auth)
