@@ -51,6 +51,7 @@ Middleware/Finalizers
 * [CORS](https://github.com/angel-dart/cors)
 * [Response Compression](https://github.com/angel-dart/compress)
 * [Security](https://github.com/angel-dart/security)
+* [File Upload Security](https://github.com/angel-dart/file_security)
 * [`shelf` Integration](https://github.com/angel-dart/shelf)
 * [User Agents](https://github.com/angel-dart/user_agent)
 
