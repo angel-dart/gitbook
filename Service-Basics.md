@@ -11,35 +11,41 @@ A service looks like this:
 ```dart
 class MyService extends Service {
   // GET /
-  // Fetch all resources
-  @override Future<List> index([Map params]);
+  // Fetch all resources. Usually returns a List.
+  @override
+  Future index([Map params]);
 
   // GET /:id
   // Fetch one resource, by its ID
-  @override Future read(id, [Map params]);
+  @override
+  Future read(id, [Map params]);
 
   // POST /
   // Create a resource. This endpoint should return
   // the created resource.
-  @override Future create(data, [Map params]);
+  @override
+  Future create(data, [Map params]);
 
   // PATCH /:id
   // Modifies a resource. Clients can submit only the data
   // they want to change, and the corresponding resource will
   // have only those fields changed. This endpoint should return
   // the modified resource.
-  @override Future modify(id, data, [Map params]);
+  @override
+  Future modify(id, data, [Map params]);
 
   // POST /:id
   // Overwrites a resource. The existing resource is completely
   // replaced by the new data. This endpoint should return the
   // new resource.
-  @override Future update(id, data, [Map params]);
+  @override 
+  Future update(id, data, [Map params]);
 
   // DELETE /:id
   // Deletes a resource. This endpoint should return the
   // deleted resource.
-  @override Future remove(id, [Map params]);
+  @override
+  Future remove(id, [Map params]);
 }
 ```
 
