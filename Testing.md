@@ -1,10 +1,17 @@
-Dart already has fantastic testing support, so the Angel framework did not need to add any real testing functionality. However, there is a library of [testing helpers](https://github.com/angel-dart/test) that will make test writing faster.
+* [Testing](#testing)
+  * [`connectTo(...)`](#connectto)
+  * [`isJson(..)`](#isjson)
+  * [`hasStatus(...)`](#hasstatus)
+* [Next Up...](#next-up)
 
-# connectTo(app, {bool saveSession: false})
+# Testing
+Dart already has fantastic testing support, through a library of [testing helpers](https://github.com/angel-dart/test) that will make test writing faster. The following functions are exported by [`package:angel_test`](https://github.com/angel-dart/test), and will make your testing much easier.
+
+## connectTo
 
 [Full definition](https://www.dartdocs.org/documentation/angel_test/latest/angel_test/connectTo.html)
 
-This function will start `app` on an available port, and return an [`angel_client`]() instance configured to send requests to the server. The client also supports session manipulation.
+This function will start `app` on an available port, and return a `TestClient` instance (based on [`package:angel_client`](https://github.com/angel-dart/client)) configured to send requests to the server. The client also supports session manipulation.
 
 ```dart
 main() {
@@ -25,8 +32,12 @@ main() {
 }
 ```
 
-# isJson(value)
+## isJson
 A `Matcher` that asserts that the given `http.Response` equals `value` when decoded as JSON. This uses `test.equals` internally, so anything that would pass that matcher passes this one.
 
-# hasStatus(status)
+## hasStatus
 A `Matcher` that asserts the given `http.Response` has the given `status` code.
+
+# Next Up...
+1. Find out how to [handle errors](https://github.com/angel-dart/angel/wiki/Error-Handling) in an Angel application
+2. Learn how to use the handy [Angel CLI](https://github.com/angel-dart/cli).
