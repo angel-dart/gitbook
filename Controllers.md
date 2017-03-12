@@ -99,7 +99,7 @@ You can use [middleware](https://github.com/angel-dart/angel/wiki/Middleware) to
 
 ```dart
 Future<bool> deserializeUser(RequestContext req, res) async {
-  var id = req.params['id'].toString();
+  var id = req.params['id'] as String;
   req.params['user'] = await asyncFetchUser(id);
 
   return true;
