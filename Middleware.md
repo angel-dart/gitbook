@@ -51,7 +51,7 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 ```
 
 ## Global Middleware
-`Routable` instances contain two arrays, `before` and `after`. You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
+`Routable` instances contain two arrays, `before` and `after` (more info on request lifecycle [here](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)). You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
 
 ```dart
 app.before.add((req, res) async => res.end());
@@ -68,7 +68,7 @@ class MyMiddleware implements AngelMiddleware {
 ```
 
 ## waterfall
-You can chain middleware (or any request handler together), if you do not feel like making multiple `chain` calls, or if it is impossible to call chain multiple times:
+You can chain middleware (or any request handler together), if you do not feel like making multiple `chain` calls, or if it is impossible to call chain multiple times, using the [`waterfall`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/waterfall.html) function:
 
 ```dart
 app.chain(waterfall([
