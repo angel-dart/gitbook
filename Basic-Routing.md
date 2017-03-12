@@ -3,7 +3,8 @@
 * [Route Parameters](#route-parameters)
 * [`RegExp` Routes](#regexp-routes)
 * [Mounting and Sub-Apps](#sub-apps)
-* [Routing](#extended-documentation)
+* [Route Groups](#route-groups)
+* [Extended Documentation](#extended-documentation)
 * [Next Up...](#next-up)
 
 # Routing
@@ -75,7 +76,7 @@ app.group('/user/:id', (router) {
 ```
 
 # Extended Documentation
-For more documentation on the router, see [its repository](https://github.com/angel-dart/route). `package:angel_route` has no `dart:io` or `dart:mirrors` dependency, and it also supports browser use (both hash and push state).
+For more documentation on the router, see [its repository](https://github.com/angel-dart/route). [`package:angel_route`](https://pub.dartlang.org/packages/angel_route) has no `dart:io` or `dart:mirrors` dependency, and it also supports browser use (both hash and push state).
 
 # Next Up...
 Learn how [middleware](https://github.com/angel-dart/angel/wiki/Middleware) let you reuse functionality across your entire routing setup.
