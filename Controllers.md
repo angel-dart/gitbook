@@ -1,5 +1,12 @@
-# Controllers
+* [Controllers](#controllers)
+  * [`@Expose()`](#expose)
+  * [Allowing Null Values](#allowing-null-values)
+  * [Named Controllers and Actions](#named-controllers-and-actions)
+  * [Interacting with Requests and Responses](#interacting-with-requests-and-responses)
+  * [Transforming Data](#transforming-data)
+* [Next Up...](#next-up)
 
+# Controllers
 Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) format. You can also use the [`group()`](https://github.com/angel-dart/angel/wiki/Basic-Routing#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/Router-class.html).
 
 The metadata on controller classes is processed via reflection *only once*, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](https://github.com/angel-dart/angel/wiki/Dependency-Injection).
@@ -55,7 +62,6 @@ Most fields are self-explanatory, save for `as` and `allowNull`. See, request pa
 ```
 
 ## Named Controllers and Actions
-
 The other is `as`. This allows you to specify a custom name for a controller class or action. `ResponseContext` contains a method, `redirectToAction` that can redirect to a controller action.
 
 ```dart
@@ -76,8 +82,7 @@ main() async {
 If you do not specify an `as`, then controllers and actions will be available by their names in code. Reflection is cool, huh?
 
 ## Interacting with Requests and Responses
-
-Controllers can also interact with requests and responses. All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
+Controllers can also interact with [requests and responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses). All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
 
 ```dart
 @Expose("/hello")
@@ -90,8 +95,7 @@ class HelloController extends Controller {
 ```
 
 ## Transforming Data
-
-You can use middleware to de/serialize data to be processed in a controller method.
+You can use [middleware](https://github.com/angel-dart/angel/wiki/Middleware) to de/serialize data to be processed in a controller method.
 
 ```dart
 Future<bool> deserializeUser(RequestContext req, res) async {
@@ -118,3 +122,5 @@ main() async {
 ```
 
 # Next Up...
+1. How to [handle file uploads](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61) with Angel
+2. [Using Angel Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
