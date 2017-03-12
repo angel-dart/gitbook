@@ -1,5 +1,6 @@
 * [Using Plug-ins](#using-plug-ins)
   * [Execution Order](#execution-order)
+  * [Writing a Plug-in](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
 * [Next Up...](#next-up)
 
 # Using Plug-ins
