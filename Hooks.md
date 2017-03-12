@@ -93,6 +93,7 @@ class MyService extends Service {
     return ['world'];
   }
 }
+```
 
 # Next Up...
 Congratulations! Not only have you gotten through the basic Angel tutorials, but you've also completed the service tutorials! However, there's still a lot more to Angel for you to explore. Check out the sidebar for more! ***Happy coding!***
