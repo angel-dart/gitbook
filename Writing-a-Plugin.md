@@ -6,7 +6,7 @@ AngelConfigurer awesomeify() => (Angel app) async {
     req.write('This request was intercepted by an awesome plug-in.');
     return false;
   });
-};
+}
 
 class MyAwesomePlugin extends AngelPlugin {
   @override
