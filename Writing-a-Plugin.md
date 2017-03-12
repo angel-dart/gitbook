@@ -1,7 +1,7 @@
 Writing a [plug-in](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) is easy:
 
 ```dart
-AngelConfigurer awesomeify() => (app) async {
+AngelConfigurer awesomeify() => (Angel app) async {
   app.before.add((req, res) async {
     req.write('This request was intercepted by an awesome plug-in.');
     return false;
