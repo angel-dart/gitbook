@@ -1,3 +1,8 @@
+* [Rendering Views](#rendering-views)
+  * [Example](#example)
+  * [`ViewGenerator` typedef](#viewgenerator)
+* [Next Up...](#next-up)
+
 # Rendering Views
 Just like `res.render` in Express, Angel's `ResponseContext` exposes a `Future` called `render`. This invokes whichever function is assigned to your server's `viewGenerator`.
 
@@ -17,7 +22,7 @@ Angel declares the following typedef:
 typedef Future<String> ViewGenerator(String path, [Map data]);
 ```
 
-A templating plug-in can assign one of these to `Angel@viewGenerator` to set itself up.
+A templating plug-in can assign one of these to `app.viewGenerator` to set itself up:
 
 ```dart
 import 'dart:io';
@@ -35,3 +40,7 @@ main() async {
   await app.startServer();
 }
 ```
+
+# Next Up...
+1. Explore Angel's isomorphic [client library](https://github.com/angel-dart/client).
+2. Find out how to [test Angel applications](https://github.com/angel-dart/angel/wiki/Testing).
