@@ -55,4 +55,4 @@ $ angel start
 
 And there you have it - you've created an Angel application!
 
-Next up: [Requests and Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
+**Next up:** [Requests & Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
