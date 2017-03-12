@@ -27,7 +27,7 @@ Services
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
-* [Database-agnostic Relations](https://github.com/angel-dart/relations)
+* [Database-Agnostic Relations](https://github.com/angel-dart/relations)
 * Database Adapters
   * [MongoDB](https://github.com/angel-dart/mongo)
   * [RethinkDB](https://github.com/angel-dart/rethink)
@@ -35,9 +35,10 @@ Services
 
 Plug-ins
 * [Authentication](https://github.com/angel-dart/auth)
+  * [Local](https://github.com/angel-dart/auth/wiki/Local-Auth)
   * [Google SSO](https://github.com/angel-dart/auth_google)
   * [Twitter SSO](https://github.com/angel-dart/auth_twitter)
-  * [Oauth2 (generic)](https://github.com/angel-dart/auth_oauth2)
+  * [OAuth2 (generic)](https://github.com/angel-dart/auth_oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [Mustache Templates](https://github.com/angel-dart/mustache)
