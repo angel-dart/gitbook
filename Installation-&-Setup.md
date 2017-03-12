@@ -1,3 +1,7 @@
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Next Up...](#next-up)
+
 # Getting Started
 Let's get it started, ha!
 
@@ -55,5 +59,5 @@ $ angel start
 
 And there you have it - you've created an Angel application!
 
-## Next Up...
+# Next Up...
 Continue reading to learn about [requests and responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses).
