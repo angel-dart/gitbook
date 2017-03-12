@@ -1,3 +1,6 @@
+* [Hooks](#hooks)
+* [Next Up...](#next-up)
+
 # Hooks
 Another concept borrowed from FeathersJS is the concept of *hooking services*. This is a mechanism that allows you to separate concerns within your application. For example, many sites send their users confirmation e-mails after successful registration. The logic to do this is often included in the same place as the code to create the user. Hooks allow you to keep the logic for these two tasks, which are more or less unrelated, in two separate places. And what's more, this frees you up to change your service code without having to update the confirmation code in multiple places. For example, you can easily use an in-memory user store in development, and a MongoDB one in production, and use the same confirmation code for each service. So, let's take a look.
 
@@ -90,3 +93,6 @@ class MyService extends Service {
     return ['world'];
   }
 }
+
+# Next Up...
+Congratulations! Not only have you gotten through the basic Angel tutorials, but you've also completed the service tutorials! However, there's still a lot more to Angel for you to explore. Check out the sidebar for more! ***Happy coding!***
