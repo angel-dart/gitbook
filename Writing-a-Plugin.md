@@ -1,4 +1,4 @@
-Writing a [plug-in](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) is easy:
+Writing a [plug-in](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) is easy. You can provide plug-ins as either functions, or classes:
 
 ```dart
 AngelConfigurer awesomeify() => (Angel app) async {
