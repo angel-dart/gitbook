@@ -1,13 +1,21 @@
-# Middleware
+* [Middleware](#middleware)
+  * [Denying Requests via Middleware](#denying-requests-via-middleware)
+  * [Declaring Middleware](#declaring-middleware)
+  * [Named Middleware](#named-middleware)
+  * [Global Middleware](#global-middleware)
+  * [`waterfall([...])`](#waterfall)
+* [Next Up...](#next-up)
 
+# Middleware
 Sometimes, it becomes to recycle code to run on multiple routes. Angel allows for this in the form of *middleware*. Middleware are frequently used as authorization filters, or to serialize database data for use in subsequent routes. Middleware in Angel can be any route handler, whether a function or arbitrary data. You can also throw exceptions in middleware.
 
 ## Denying Requests via Middleware
-A middleware should return either `true` or `false`. If `false` is returned, no further routes will be executed. If `true` is returned, route evaluation will continue.
+A middleware should return either `true` or `false`. If `false` is returned, no further routes will be executed. If `true` is returned, route evaluation will continue. (more on request handler return values [here](https://github.com/angel-dart/angel/wiki/Requests-&-Responses#return-values)).
 
 As you can imagine, this is perfect for authorization filters.
 
 ## Declaring Middleware
+You can call a router's `chain` method (**recommended!**), or assign middleware in the `middleware` parameter of a route method.
 
 ```dart
 // Both ways ultimately accomplish the same thing
@@ -58,3 +66,19 @@ class MyMiddleware implements AngelMiddleware {
   }
 }
 ```
+
+## waterfall
+You can chain middleware (or any request handler together), if you do not feel like making multiple `chain` calls, or if it is impossible to call chain multiple times:
+
+```dart
+app.chain(waterfall([
+  banIp('127.0.0.1'),
+  'auth',
+  ensureUserHasAccess(),
+  (req, res) async => true,
+  takeOutTheTrash()
+])).get(...);
+```
+
+# Next Up...
+Take a good look at [controllers](https://github.com/angel-dart/angel/wiki/Controllers) in Angel!
