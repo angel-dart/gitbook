@@ -105,7 +105,7 @@ Future<bool> deserializeUser(RequestContext req, res) async {
   return true;
 }
 
-@Expose("/user", middleware: const["deserialize_user"])
+@Expose("/user", middleware: const [deserializeUser])
 class UserController extends Controller {
 
   @Expose("/:id/name")
@@ -116,7 +116,7 @@ class UserController extends Controller {
 }
 
 main() async {
-  Angel app = new Angel()..registerMiddleware("deserialize_user", deserializeUser);
+  Angel app = new Angel();
   await app.configure(new UserController());
 }
 ```
