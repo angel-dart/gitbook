@@ -26,6 +26,9 @@ req.inject(Todo, someTodoInstanceSingleton);
 
 // Or by name
 req.inject('database', await databaseProvider.connect('proto://conn-string'));
+
+// Inject into *every* request
+app.inject('foo', bar);
 ```
 
 ## In Routes and Controllers
