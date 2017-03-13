@@ -62,3 +62,28 @@ class ApiController extends Controller {
   fetchUser(String id, Db db) => db.collection("users").findOne(where.id(new ObjectId.fromHexString(id)));
 }
 ```
+
+## Dependency-Injected Controllers
+[Controller](methods) have dependencies injected without any additional configuration by you. However, you might want to inject dependencies into the constructor of your controller.
+
+```dart
+@Expose('/controller')
+class MyController {
+  final AngelAuth auth;
+  final Db db;
+
+  MyController(this.auth, this.db);
+
+  @Expose('/login')
+  login() => auth.authenticate('local');
+}
+
+main() async {
+  // At some point in your application, register necessary dependencies as singletons...
+  app.container.singleton(auth);
+  app.container.singleton(db);
+
+  // Create the controller with injected dependencies
+  await app.configure(app.container.make(MyController));
+}
+```
