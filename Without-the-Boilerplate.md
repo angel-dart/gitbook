@@ -1,10 +1,9 @@
 # Without the Boilerplate
 It's very easy to setup a bare-bones Angel server.
 
-Create a file called `pubspec.yaml`. In it, include lines that look something like this. Feel free to replace 'app' with the name of your app:
+Any Dart project needs a project file, called `pubspec.yaml`. This file almost always contains a `dependencies` section, where you will install the Angel framework libraries. In most cases, you will want to import `package:angel_common`, which contains all of the functionality you need to build an Angel application. However, if you only want the HTTP server, install `package:angel_framework` instead. `package:angel_common` bundles `package:angel_framework`, along with other core packages (see [here](https://github.com/angel-dart/common)).
 
 ```yaml
-name: app
 dependencies:
     angel_common: ^1.0.0-beta
 ```
@@ -15,7 +14,7 @@ Next, create a file, `bin/server.dart`. Put this code in it:
 
 ```dart
 import 'dart:io';
-import 'package:angel_framework/angel_framework.dart';
+import 'package:angel_common/angel_common.dart';
 
 main() async {
   Angel app = new Angel();
@@ -29,7 +28,7 @@ main() async {
 
 The specifics are not that important, but there are three important calls here:
 
-1. `Angel app = new Angel()` - The Angel API is manifested a class, and we need an instance of it to run our server.
+1. `Angel app = new Angel()` - The base Angel server is a simple class, and we need an instance of it to run our server.
 2. `app.get("/", "Hello, world!");` - This is a [route](https://github.com/angel-dart/angel/wiki/Basic-Routing), and tells our server to respond to all GET requests at our server root with `"Hello, world!"`. The response will automatically be encoded as JSON.
 3. `await app.startServer(...)` - This asynchronous call is what actually starts the server listening.
 
