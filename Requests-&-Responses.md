@@ -5,8 +5,7 @@
 * [Next Up...](#next-up)
 
 # Requests and Responses
-
-Angel is inspired by Express, and such, request handlers in general represent those from Express. Basic request handlers accept two parameters:
+Angel is inspired by Express, and such, request handlers in general represent those from Express. Request handlers can be functions, or plain Dart objects (see [how they are handled](#return-values)). Basic request handlers accept two parameters:
 * `RequestContext` - Contains vital information about the client requesting a resource, such as request method, request body, IP address, etc. The request object can also be used to pass information from one handler to the next. 
 * `ResponseContext` - Allows you to send headers, write data, and more, to be sent to the client. To prevent a response from being modified by future handlers, call `res.end()` to prevent further writing.
 
