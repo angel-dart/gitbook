@@ -8,15 +8,23 @@
 * [Next Up...](#next-up)
 
 # Routing
-It is very to attach handlers to dynamic paths. Routes are resolved in the order they are declared.
+There is only one method responsible for adding routes to your application:
 
-The simplest routes look like this, and are self-explanatory:
 ```dart
-app.get('/', someRequestHandler);
-app.post('/', someRequestHandler);
-app.patch('/', someRequestHandler);
-app.delete('/', someRequestHandler);
-app.addRoute('PUT', '/', someRequestHandler);
+app.addRoute('<method>', '<path>', requestHandler);
+```
+
+Your `requestHandler` can be any Dart value, whether a function, or an object. See the [Requests and Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses#return-values) pages for detailed documentation.
+
+However, the following methods are available for convenience, and are the ones you will
+use most often. Each method's name responds to an HTTP request method. For example, a
+route declared with `app.get(...)`, will respond to HTTP `GET` requests.
+
+```dart
+app.get('<path>', requestHandler);
+app.post('<path>', requestHandler);
+app.patch('<path>', requestHandler);
+app.delete('<path>', requestHandler);
 ```
 
 Route paths *do not* have to begin with a forward slash, as leading and trailing slashes are stripped from route paths internally.
