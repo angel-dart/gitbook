@@ -29,10 +29,8 @@ main() async {
 The specifics are not that important, but there are three important calls here:
 
 1. `Angel app = new Angel()` - The base Angel server is a simple class, and we need an instance of it to run our server.
-2. `app.get("/", "Hello, world!");` - This is a [route](https://github.com/angel-dart/angel/wiki/Basic-Routing), and tells our server to respond to all GET requests at our server root with `"Hello, world!"`. The response will automatically be encoded as JSON.
-3. `await app.startServer(...)` - This asynchronous call is what actually starts the server listening.
-
-You might consider wrapping this in a call to `runZoned`, so your server does not crash on errors.
+2. `app.get("/", "Hello, world!");` - This is a [route](https://github.com/angel-dart/angel/wiki/Basic-Routing), and tells our server to respond to all GET requests at our server root with `"Hello, world!"`. The response will automatically be encoded as JSON. Head over to the [Basic Routing](https://github.com/angel-dart/angel/wiki/Basic-Routing) tutorial to learn about routes, and how they work.
+3. `await app.startServer(...)` - This asynchronous call is what actually starts the server listening. Without it, your application won't be accessible over HTTP (as it won't ever listen for requests).
 
 That's it! Your server is ready to serve requests. You can easily start it from the command line like this:
 
