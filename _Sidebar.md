@@ -56,6 +56,9 @@ Middleware/Finalizers
 * [`shelf` Integration](https://github.com/angel-dart/shelf)
 * [User Agents](https://github.com/angel-dart/user_agent)
 
+Deployment
+* [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
+
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
 * [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
