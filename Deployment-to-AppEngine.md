@@ -1,4 +1,4 @@
-You can use (`package:appengine`](https://pub.dartlang.org/packages/appengine) with Angel easily, just by passing it your app's `handleRequest` method:
+You can use [`package:appengine`](https://pub.dartlang.org/packages/appengine) with Angel easily, just by passing it your app's `handleRequest` method:
 
 ```dart
 import 'package:angel_common/angel_common.dart';
