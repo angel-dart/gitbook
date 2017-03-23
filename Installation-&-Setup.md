@@ -1,5 +1,6 @@
 * [Getting Started](#getting-started)
   * [Installation](#installation)
+    * [Prerequisites](#prequisites)
 * [Next Up...](#next-up)
 
 # Getting Started
@@ -7,7 +8,9 @@ Let's get it started, ha!
 
 ## Installation
 
-Firstly, ensure you have the [Dart SDK](https://www.dartlang.org/downloads/) installed.
+### Prerequisites
+* Firstly, ensure you have the [Dart SDK](https://www.dartlang.org/downloads/) installed.
+* For the default boilerplate, you will also want to have [MongoDB](https://www.mongodb.com/) installed on your system, preferably running as a daemon. You have the option of using a different database later.
 
 Now, install the [Angel CLI](https://github.com/angel-dart/cli). The CLI includes several code generators and commands that will help you expedite your development cycle.
 
