@@ -39,7 +39,7 @@ main() {
 ```
 
 ## Queries, Files and Bodies
-`req.query` and `req.body` are Maps, and are available on each request. `req.files` is a List of files uploaded to the server. 
+`req.query` and `req.body` are Maps, and are available on each request. `req.files` is a List of files uploaded to the server. Angel automatically parses `multipart/form-data`, `application/json`, and `application/x-www-form-urlencoded` bodies.
 
 For more information, see the API docs:
 
