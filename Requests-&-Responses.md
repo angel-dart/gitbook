@@ -41,6 +41,32 @@ main() {
 ## Queries, Files and Bodies
 `req.query` and `req.body` are Maps, and are available on each request. `req.files` is a List of files uploaded to the server. Angel automatically parses `multipart/form-data`, `application/json`, and `application/x-www-form-urlencoded` bodies.
 
+When you are in production, one way to improve performance is by only parsing request bodies when it is necessary. In such a case, you will have to use `lazyBody()`, `lazyFiles()`, etc. to access request body information. The request body will only be parsed once.
+
+```dart
+```
+
+`req.query` can be used without parsing the request body. However, the query string parser in `package:body_parser` supports advanced queries like the following, so you may consider parsing the body:
+
+```dart
+// This query string:
+// ?foo=bar&bar.baz.foo=hello&bar.world=quux
+//
+// becomes:
+{
+  "foo": "bar",
+  "bar": {
+    "world": "quux",
+    "baz": {
+      "foo": "hello"
+    }
+  }
+}
+```
+
+If you [write your own plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin), be sure to use
+the `lazy()` methods.
+
 For more information, see the API docs:
 
 [RequestContext](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext-class.html)
