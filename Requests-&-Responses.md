@@ -44,6 +44,22 @@ main() {
 When you are in production, one way to improve performance is by only parsing request bodies when it is necessary. In such a case, you will have to use `lazyBody()`, `lazyFiles()`, etc. to access request body information. The request body will only be parsed once.
 
 ```dart
+main() {
+  // ...
+  app.lazyParseBodies = true;
+
+  app.get('/', () {
+    // Requests that don't need the body, never see the body
+  });
+
+  app.post('/:id', (req, res) async {
+    var body = await req.lazyBody();
+
+    // Same as running:
+    await req.parse();
+    var body = req.body;
+  });
+}
 ```
 
 `req.query` can be used without parsing the request body. However, the query string parser in `package:body_parser` supports advanced queries like the following, so you may consider parsing the body:
@@ -65,7 +81,7 @@ When you are in production, one way to improve performance is by only parsing re
 ```
 
 If you [write your own plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin), be sure to use
-the `lazy()` methods.
+the `lazy` alternatives.
 
 For more information, see the API docs:
 
