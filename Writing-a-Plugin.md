@@ -1,3 +1,5 @@
+[Guidelines](#guidelines)
+
 Writing a [plug-in](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) is easy. You can provide plug-ins as either functions, or classes:
 
 ```dart
@@ -27,6 +29,7 @@ class MyAwesomePlugin extends AngelPlugin {
 * Try to get it [added to main organization](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md).
 * Plugins should generally be small.
 * Plugins should *NEVER* modify app configuration!!!
+  * i.e. Do *NOT* set `app.lazyParseBodies`, `app.storeOriginalBuffer`, etc.
 * Stay away from `req.io` and `res.io` if possible. Using these will doom your plugin to a life of only working on HTTP servers. Future versions of Angel may be server-agnostic, and this will keep your plugin firmly lodged in the past.
 * If your plugin is development-only or production-only, it should automatically configure itself. Prefer [`app.isProduction`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/Angel/isProduction.html) to manually checking the environment for `ANGEL_ENV`.
 * Use `req.lazyBody()`, `req.lazyFiles()`, etc. if you are running in an `async` context. Otherwise, your plugin may crash applications that lazy-parse request bodies.
