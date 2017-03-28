@@ -29,6 +29,8 @@ class MyAwesomePlugin extends AngelPlugin {
 * Plugins should *NEVER* modify app configuration!!!
 * Stay away from `req.io` and `res.io` if possible. Using these will doom your plugin to a life of only working on HTTP servers. Future versions of Angel may be server-agnostic, and this will keep your plugin firmly lodged in the past.
 * If your plugin is development-only or production-only, it should automatically configure itself. Prefer [`app.isProduction`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/Angel/isProduction.html) to manually checking the environment for `ANGEL_ENV`.
+* Use `req.lazyBody()`, `req.lazyFiles()`, etc. if you are running in an `async` context. Otherwise, your plugin may crash applications that lazy-parse request bodies.
+* If you use `req.lazyQuery()`, refrain from using `forceParse`. Never force any additional side effects on the user.
 
 Finally, your plugin should expose common options in a simple way. For example, the [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
 
