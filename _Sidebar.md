@@ -27,6 +27,7 @@ Services
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
+  * [Bundled Hooks](https://www.dartdocs.org/documentation/angel_framework/1.0.0-dev.68/angel_framework.hooks/angel_framework.hooks-library.html)
 * [Database-Agnostic Relations](https://github.com/angel-dart/relations)
 * Database Adapters
   * [MongoDB](https://github.com/angel-dart/mongo)
