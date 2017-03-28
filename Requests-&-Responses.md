@@ -45,7 +45,7 @@ When you are in production, one way to improve performance is by only parsing re
 
 ```dart
 main() {
-  // ...
+  // Set this flag to lazy-parse bodies
   app.lazyParseBodies = true;
 
   app.get('/', () {
