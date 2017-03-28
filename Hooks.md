@@ -1,4 +1,5 @@
 * [Hooks](#hooks)
+* [Bundled Hooks](#bundled-hooks)
 * [Next Up...](#next-up)
 
 # Hooks
@@ -92,6 +93,19 @@ class MyService extends Service {
   index([params]) async {
     return ['world'];
   }
+}
+```
+
+# Bundled Hooks
+There are several hooks shipped with the Angel framework:
+https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html
+
+```dart
+import 'package:angel_framework/hooks.dart` as hooks;
+
+main() {
+  // ...
+  service.listen(hooks.disable());
 }
 ```
 
