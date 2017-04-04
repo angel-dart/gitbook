@@ -20,7 +20,7 @@ Of course, you will probably want to handle these errors, and potentially render
 The [`angel_errors`](https://github.com/angel-dart/errors) plug-in provides a simple abstraction over the complications of catching errors within Angel.
 
 ```dart
-final errors = new ErrorHandler({
+final errors = new ErrorHandler(handlers: {
   404: (req, res) async => render404Page(),
   403: (req, res) async => renderForbidden(),
   500: (req, res) async => renderGenericErrorPage()
