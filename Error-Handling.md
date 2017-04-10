@@ -53,8 +53,7 @@ errors.fatalErrorHandler = (err) async => foo();
 Angel catches errors in several different spots, so if you want to provide
 error coverage by yourself, hook the following:
 
-* `errorHandler` - Used to handle `AngelHttpException` instances. Set this by calling
-`app.onError(...)`.
+* `errorHandler` - Used to handle `AngelHttpException` instances. Set this like any other field.
 * `fatalErrorStream` - A broadcast stream, fired when responding with a `ResponseContext` fails.
 
 # Next Up...
