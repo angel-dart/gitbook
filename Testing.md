@@ -44,5 +44,5 @@ The complete set of `angel_test` Matchers can be found
 [here](https://www.dartdocs.org/documentation/angel_test/1.0.4/angel_test/angel_test-library.html).
 
 # Next Up...
-1. Find out how to [handle errors](https://github.com/angel-dart/angel/wiki/Error-Handling) in an Angel application
+1. Find out how to [handle errors](https://github.com/angel-dart/angel/wiki/Error-Handling) in an Angel application.
 2. Learn how to use the handy [Angel CLI](https://github.com/angel-dart/cli).
