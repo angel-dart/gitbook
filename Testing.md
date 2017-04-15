@@ -2,6 +2,7 @@
   * [`connectTo(...)`](#connectto)
   * [`isJson(..)`](#isjson)
   * [`hasStatus(...)`](#hasstatus)
+  * [More Matchers...](#more-matchers)
 * [Next Up...](#next-up)
 
 # Testing
@@ -37,6 +38,10 @@ A `Matcher` that asserts that the given `http.Response` equals `value` when deco
 
 ## hasStatus
 A `Matcher` that asserts the given `http.Response` has the given `status` code.
+
+## More Matchers
+The complete set of `angel_test` Matchers can be found
+[here](https://www.dartdocs.org/documentation/angel_test/1.0.4/angel_test/angel_test-library.html).
 
 # Next Up...
 1. Find out how to [handle errors](https://github.com/angel-dart/angel/wiki/Error-Handling) in an Angel application
