@@ -48,6 +48,7 @@ Plug-ins
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
+* [Toggle-able Services](https://github.com/angel-dart/toggle)
 
 Middleware/Finalizers
 * [CORS](https://github.com/angel-dart/cors)
@@ -56,6 +57,7 @@ Middleware/Finalizers
 * [File Upload Security](https://github.com/angel-dart/file_security)
 * [`shelf` Integration](https://github.com/angel-dart/shelf)
 * [User Agents](https://github.com/angel-dart/user_agent)
+* [Pagination](https://github.com/angel-dart/paginate)
 
 Deployment
 * [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
@@ -69,3 +71,5 @@ Advanced
 * [Standalone Router](https://github.com/angel-dart/route)
 * [Writing a Plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin)
 * [Production Mode](https://github.com/angel-dart/angel/wiki/Production-Mode)
+* [Task Engine](https://github.com/angel-dart/task)
+* [Hot Reloading](https://github.com/angel-dart/hot)
