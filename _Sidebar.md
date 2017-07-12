@@ -64,7 +64,10 @@ Middleware/Finalizers
 * [Pagination](https://github.com/angel-dart/paginate)
 
 Deployment
+* [Running in Isolates](https://github.com/angel-example/multithread)
+* [Configuring SSL](https://github.com/angel-dart/angel/wiki/Configuring-SSL)
 * [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
+* [DigitalOcean](https://github.com/angel-dart/angel/wiki/Deployment-to-DigitalOcean)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
