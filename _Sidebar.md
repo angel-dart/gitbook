@@ -30,7 +30,6 @@ Services
   * [Bundled Hooks](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html)
 * [Database-Agnostic Relations](https://github.com/angel-dart/relations)
 * Database Adapters
-  * **[Fluent Query Builder](https://github.com/angel-dart/query_builder)**
   * [MongoDB](https://github.com/angel-dart/mongo)
   * [RethinkDB](https://github.com/angel-dart/rethink)
 
