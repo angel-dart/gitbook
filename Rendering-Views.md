@@ -6,7 +6,7 @@
 # Rendering Views
 Just like `res.render` in Express, Angel's `ResponseContext` exposes a `Future` called `render`. This invokes whichever function is assigned to your server's `viewGenerator`.
 
-There are several templating plug-ins for Angel, including Mustache and Jade, as well as Hart.
+There is a Mustache templating plug-in for Angel available: https://github.com/angel-dart/mustache
 
 ## Example
 
