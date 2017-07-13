@@ -43,7 +43,7 @@ app.after.add(errors.throwError(status: 404));
 // as if the response has the [defaultStatus].
 //
 // This will not be run on 200 responses.
-app.all('*', errors.middleware(defaultStatus: 500));
+app.after.add(errors.middleware(defaultStatus: 500));
 
 // You can also catch fatal errors.
 errors.fatalErrorHandler = (err) async => foo();
