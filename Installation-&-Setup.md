@@ -56,7 +56,7 @@ web/ - Client-side code.
 It's easy to run our server. Just type the following:
 
 ```bash
-$ angel start
+$ dart --observe bin/server.dart
 ```
 
 And there you have it - you've created an Angel application!
