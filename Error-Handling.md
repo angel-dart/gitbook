@@ -4,12 +4,12 @@
 * [Next Up...](#next-up)
 
 # Error Handling
-Error handling is one of the most important concerns in building Web applications. The easiest way to throw an HTTP exception is to actually throw one. Angel provides an `AngelHttpException` class to take care of this.
+Error handling is one of the most important concerns in building Web applications. The easiest way to throw an HTTP exception is to actually `throw` one. Angel provides an `AngelHttpException` class to take care of this.
 
 ```dart
 app.get('/this-page-does-not-exist', (req, res) async {
   // 404 Not Found
-  throw new AngelHttpException.NotFound();
+  throw new AngelHttpException.notFound();
 });
 ```
 
