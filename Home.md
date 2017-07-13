@@ -19,6 +19,8 @@ There are a few server-side frameworks rising within Dart at this moment, but An
 
 For this to work, Angel must be flexible, and have a low learning curve. Thus, the basic API is modeled after Express, and new functionality is added via plug-ins.
 
+[Hot reloading](https://github.com/angel-dart/hot) is a great solution to slow edit-refresh cycles, and makes the Angel experience unlike that of any other framework, in *any* other language.
+
 The final goal of Angel is scalability. As your application grows, Angel aims to continue working, with little or no change in server-side configuration.
 
 Ready to take a swing? [Getting started](https://github.com/angel-dart/angel/wiki/Installation-&-Setup) is simple.
