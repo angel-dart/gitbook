@@ -56,7 +56,8 @@ web/ - Client-side code.
 It's easy to run our server. Just type the following:
 
 ```bash
-$ dart --observe bin/server.dart
+# Use the `--observe` flag to enable hot reloading in Angel.
+dart --observe bin/server.dart
 ```
 
 And there you have it - you've created an Angel application!
