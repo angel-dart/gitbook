@@ -18,7 +18,7 @@ import 'package:angel_framework/angel_framework.dart';
 class TodoController extends Controller {
 
   @Expose("/:id")
-  getTodo(int id) async {
+  getTodo(id) async {
     return await someAsyncAction();
   }
 
