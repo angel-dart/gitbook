@@ -46,7 +46,6 @@ Plug-ins
   * [OAuth2 (generic)](https://github.com/angel-dart/auth_oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
-* [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
 * [Service Seeder](https://github.com/angel-dart/seeder)
 * [Static Files](https://github.com/angel-dart/static)
@@ -69,6 +68,11 @@ Deployment
 * [HTTP/2 Support](https://github.com/angel-dart/http2)
 * [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
 * [DigitalOcean](https://github.com/angel-dart/angel/wiki/Deployment-to-DigitalOcean)
+
+Front-end
+* [Mustache Templates](https://github.com/angel-dart/mustache)
+* [Jael template engine](https://github.com/angel-dart/jael)
+* [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
