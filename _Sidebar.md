@@ -53,6 +53,7 @@ Plug-ins
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
+* [Server-sent Events](https://github.com/angel-dart/eventsource)
 * [Toggle-able Services](https://github.com/angel-dart/toggle)
 
 Middleware/Finalizers
