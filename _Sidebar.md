@@ -32,6 +32,7 @@ Services
 * Database Adapters
   * [MongoDB](https://github.com/angel-dart/mongo)
   * [RethinkDB](https://github.com/angel-dart/rethink)
+  * [JSON File-based](https://github.com/angel-dart/file_service)
 
 **PostgreSQL ORM**
 * [Model Serialization](https://github.com/angel-dart/serialize)
@@ -74,6 +75,7 @@ Front-end
 * [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Jael template engine](https://github.com/angel-dart/jael)
 * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
+* [Real-time polling](https://github.com/angel-dart/poll)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
