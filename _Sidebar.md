@@ -64,6 +64,7 @@ Middleware/Finalizers
 * [`shelf` Integration](https://github.com/angel-dart/shelf)
 * [User Agents](https://github.com/angel-dart/user_agent)
 * [Pagination](https://github.com/angel-dart/paginate)
+* [`Range`, `If-Range`, `Accept-Ranges` support](https://github.com/angel-dart/range)
 
 Deployment
 * [Running in Isolates](https://github.com/angel-example/multithread)
