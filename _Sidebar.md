@@ -44,6 +44,7 @@ Plug-ins
   * [Local](https://github.com/angel-dart/auth/wiki/Local-Auth)
   * [Google SSO](https://github.com/angel-dart/auth_google)
   * [Twitter SSO](https://github.com/angel-dart/auth_twitter)
+  * [Instagram SSO](https://github.com/angel-dart/auth_instagram)
   * [OAuth2 (generic)](https://github.com/angel-dart/auth_oauth2)
   * [OAuth2 server implementation](https://github.com/angel-dart/oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
