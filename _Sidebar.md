@@ -26,6 +26,7 @@ Services
 * [TypedService](https://github.com/angel-dart/angel/wiki/TypedService)
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
 * [Custom Services](https://github.com/angel-dart/angel/wiki/Custom-Services)
+  * [Proper Service Implementation](https://github.com/angel-dart/angel/wiki/Proper-Service-Implementation)
 * [Hooks](https://github.com/angel-dart/angel/wiki/Hooks)
   * [Bundled Hooks](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html)
 * [Database-Agnostic Relations](https://github.com/angel-dart/relations)
