@@ -54,6 +54,7 @@ Plug-ins
 * [Static Files](https://github.com/angel-dart/static)
 * [Validation](https://github.com/angel-dart/validate)
 * [Websockets](https://github.com/angel-dart/websocket)
+  * [WebSocket synchronization via `pub_sub`](https://github.com/angel-dart/sync)
 * [Server-sent Events](https://github.com/angel-dart/eventsource)
 * [Toggle-able Services](https://github.com/angel-dart/toggle)
 
@@ -79,6 +80,7 @@ Front-end
 * [Jael template engine](https://github.com/angel-dart/jael)
 * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
 * [`html_builder`-based engine](https://github.com/angel-dart/html)
+* [Markdown template engine](https://github.com/angel-dart/markdown)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
