@@ -6,8 +6,9 @@ import 'package:appengine/appengine.dart';
 
 void main() async {
   var app = new Angel();
+  var http = new AngelHttp(app);
   // ...
 
-  await runAppEngine(app.handleRequest);
+  await runAppEngine(http.handleRequest);
 }
 ```
