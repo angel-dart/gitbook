@@ -74,7 +74,6 @@ Deployment
 * [Configuring SSL](https://github.com/angel-dart/angel/wiki/Configuring-SSL)
 * [HTTP/2 Support](https://github.com/angel-dart/http2)
 * [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
-* [DigitalOcean](https://github.com/angel-dart/angel/wiki/Deployment-to-DigitalOcean)
 
 Front-end
 * [Mustache Templates](https://github.com/angel-dart/mustache)
