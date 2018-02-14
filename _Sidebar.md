@@ -78,7 +78,7 @@ Front-end
 * [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Jael template engine](https://github.com/angel-dart/jael)
 * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
-* [Real-time polling](https://github.com/angel-dart/poll)
+* [`html_builder`-based engine](https://github.com/angel-dart/html)
 
 Advanced
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
@@ -91,6 +91,7 @@ Advanced
 * [Production Mode](https://github.com/angel-dart/angel/wiki/Production-Mode)
 * [Task Engine](https://github.com/angel-dart/task)
 * [Hot Reloading](https://github.com/angel-dart/hot)
+* [Real-time polling](https://github.com/angel-dart/poll)
 
 Other
 * [Flutter helper widgets](https://github.com/angel-dart/flutter)
