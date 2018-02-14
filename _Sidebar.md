@@ -44,6 +44,7 @@ Plug-ins
   * [Google SSO](https://github.com/angel-dart/auth_google)
   * [Twitter SSO](https://github.com/angel-dart/auth_twitter)
   * [OAuth2 (generic)](https://github.com/angel-dart/auth_oauth2)
+  * [OAuth2 server implementation](https://github.com/angel-dart/oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
 * [Reverse Proxy](https://github.com/angel-dart/proxy)
