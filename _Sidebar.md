@@ -81,3 +81,6 @@ Advanced
 * [Production Mode](https://github.com/angel-dart/angel/wiki/Production-Mode)
 * [Task Engine](https://github.com/angel-dart/task)
 * [Hot Reloading](https://github.com/angel-dart/hot)
+
+Other
+* [Flutter helper widgets](https://github.com/angel-dart/flutter)
