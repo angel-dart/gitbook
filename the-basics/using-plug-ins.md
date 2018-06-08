@@ -34,7 +34,7 @@ main() async {
 
 ### Execution Order
 
-Plugins are usually immediately invoked by `app.configure()`. However, you may run into certain plug-ins, such as [WebSocket support](https://github.com/angel-dart/websocket), that depend on other facilities already being available, or all of your [services](https://github.com/angel-dart/angel/wiki/Service-Basics) already being mounted. You can set aside a plug-in to be run just before server startup \(a call to `app.startServer()`\) by adding it to `app.justBeforeStart`, instead of directly calling `app.configure()`.
+Plugins are usually immediately invoked by `app.configure()`. However, you may run into certain plug-ins, such as [WebSocket support](https://github.com/angel-dart/websocket), that depend on other facilities already being available, or all of your [services](../services/service-basics.md) already being mounted. You can set aside a plug-in to be run just before server startup \(a call to `app.startServer()`\) by adding it to `app.justBeforeStart`, instead of directly calling `app.configure()`.
 
 ```dart
 app.justBeforeStart.addAll([
@@ -46,5 +46,5 @@ app.justBeforeStart.addAll([
 
 ## Next Up...
 
-Learn how to generate content for clients by [rendering views](https://github.com/angel-dart/angel/wiki/Rendering-Views).
+Learn how to generate content for clients by [rendering views](rendering-views.md).
 

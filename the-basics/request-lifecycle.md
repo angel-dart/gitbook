@@ -17,5 +17,5 @@ Requests in the Angel framework go through a relatively complex lifecycle, and t
 10. If `res.willCloseItself = false`, all headers, the status code and the response buffer are sent through the actual `HttpResponse`.
 11. The `HttpResponse` is closed.
 
-If at any point an error occurs, Angel will catch it. See the [error handling](https://github.com/angel-dart/angel/wiki/Error-Handling) docs for more.
+If at any point an error occurs, Angel will catch it. See the [error handling](error-handling.md) docs for more.
 

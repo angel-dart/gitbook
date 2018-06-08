@@ -25,7 +25,7 @@ app.patch('<path>', requestHandler);
 app.delete('<path>', requestHandler);
 ```
 
-Your `requestHandler` can be any Dart value, whether a function, or an object. See the [Requests and Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses#return-values) pages for detailed documentation.
+Your `requestHandler` can be any Dart value, whether a function, or an object. See the [Requests and Responses](requests-and-responses.md#return-values) pages for detailed documentation.
 
 Route paths _do not_ have to begin with a forward slash, as leading and trailing slashes are stripped from route paths internally.
 
@@ -94,5 +94,5 @@ For more documentation on the router, see [its repository](https://github.com/an
 
 ## Next Up...
 
-Learn how [middleware](https://github.com/angel-dart/angel/wiki/Middleware) let you reuse functionality across your entire routing setup.
+Learn how [middleware](middleware.md) let you reuse functionality across your entire routing setup.
 

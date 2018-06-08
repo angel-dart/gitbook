@@ -12,7 +12,7 @@
 
 Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller) format. You can also use the [`group()`](https://github.com/angel-dart/angel/wiki/Basic-Routing#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/Router-class.html).
 
-The metadata on controller classes is processed via reflection _only once_, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](https://github.com/angel-dart/angel/wiki/Dependency-Injection).
+The metadata on controller classes is processed via reflection _only once_, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](dependency-injection.md).
 
 ```dart
 import 'package:angel_framework/angel_framework.dart';
@@ -89,7 +89,7 @@ If you do not specify an `as`, then controllers and actions will be available by
 
 ### Interacting with Requests and Responses
 
-Controllers can also interact with [requests and responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses). All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
+Controllers can also interact with [requests and responses](requests-and-responses.md). All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
 
 ```dart
 @Expose("/hello")
@@ -103,7 +103,7 @@ class HelloController extends Controller {
 
 ### Transforming Data
 
-You can use [middleware](https://github.com/angel-dart/angel/wiki/Middleware) to de/serialize data to be processed in a controller method.
+You can use [middleware](middleware.md) to de/serialize data to be processed in a controller method.
 
 ```dart
 Future<bool> deserializeUser(RequestContext req, res) async {
@@ -132,5 +132,5 @@ main() async {
 ## Next Up...
 
 1. How to [handle file uploads](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61) with Angel
-2. [Using Angel Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
+2. [Using Angel Plug-ins](using-plug-ins.md)
 

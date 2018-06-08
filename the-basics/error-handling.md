@@ -1,8 +1,6 @@
 # Error-Handling
 
 * [Error Handling](error-handling.md#error-handling)
-  * [Using the Provided Plug-in](error-handling.md#using-the-provided-plug-in)
-  * [Manual Error Handling](error-handling.md#manual-error-handling)
 * [Next Up...](error-handling.md#next-up)
 
 ## Error Handling
@@ -16,50 +14,31 @@ app.get('/this-page-does-not-exist', (req, res) async {
 });
 ```
 
-Of course, you will probably want to handle these errors, and potentially render views upon catching them. There are a few ways of doing this.
+Of course, you will probably want to handle these errors, and potentially render views upon catching them.
 
-### Using the Provided Plug-in
+Fortunately, Angel runs every request in its own [`zone`](https://api.dartlang.org/stable/dart-async/Zone-class.html).
+This enables Angel to catch errors on every request, and not crash the server.
+Unhandled errors are wrapped in instances of `AngelHttpException`, which can be handled as follows.
 
-The [`angel_errors`](https://github.com/angel-dart/errors) plug-in provides a simple abstraction over the complications of catching errors within Angel.
+To provide custom error handling logic:
 
 ```dart
-final errors = new ErrorHandler(handlers: {
-  404: (req, res) async => render404Page(),
-  403: (req, res) async => renderForbidden(),
-  500: (req, res) async => renderGenericErrorPage()
-});
+// Typically, you want to preserve the old error handler, unless you are
+// completely replacing the functionality.
+var oldErrorHandler = app.errorHandler;
 
-// The following line is necessary to render the
-// above pages on AngelHttpException instances.
-await app.configure(errors);
-
-app.get('/hello', (req, res) async => foo());
-
-// This middleware simply sets a request's status, and
-// passes it to the next handler.
-app.after.add(errors.throwError(status: 404));
-
-// This middleware will respond to any unanswered request
-// with an appropriate response.
-//
-// If there is no registered handler, then it will respond
-// as if the response has the [defaultStatus].
-//
-// This will not be run on 200 responses.
-app.after.add(errors.middleware(defaultStatus: 500));
-
-// You can also catch fatal errors.
-errors.fatalErrorHandler = (err) async => foo();
+app.errorHandler = (AngelHttpException e, RequestContext req, ResponseContext res) {
+  if (someCondition) {
+    // Do something else special...
+  } else {
+    // Otherwise, use the default functionality.
+    return oldErrorHandler(e, req, res);
+  }
+}
 ```
 
-### Manual error handling
-
-Angel catches errors in several different spots, so if you want to provide error coverage by yourself, hook the following:
-
-* `errorHandler` - Used to handle `AngelHttpException` instances. Set this like any other field.
-* `fatalErrorStream` - A broadcast stream, fired when responding with a `ResponseContext` fails.
 
 ## Next Up...
 
-Congratulations! You have completed the basic Angel tutorials. Take what you've learned on a spin in a small side project, and then move on to learning about [services](https://github.com/angel-dart/angel/wiki/Service-Basics).
+Congratulations! You have completed the basic Angel tutorials. Take what you've learned on a spin in a small side project, and then move on to learning about [services](../services/service-basics.md).
 

@@ -14,7 +14,7 @@ Sometimes, it becomes to recycle code to run on multiple routes. Angel allows fo
 
 ### Denying Requests via Middleware
 
-A middleware should return either `true` or `false`. If `false` is returned, no further routes will be executed. If `true` is returned, route evaluation will continue. \(more on request handler return values [here](https://github.com/angel-dart/angel/wiki/Requests-&-Responses#return-values)\).
+A middleware should return either `true` or `false`. If `false` is returned, no further routes will be executed. If `true` is returned, route evaluation will continue. \(more on request handler return values [here](requests-and-responses.md#return-values)\).
 
 As you can imagine, this is perfect for authorization filters.
 
@@ -58,7 +58,9 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 
 ### Global Middleware
 
-`Routable` instances contain two arrays, `before` and `after` \(more info on request lifecycle [here](https://github.com/angel-dart/angel/wiki/Request-Lifecycle)\). You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
+`Routable` instances contain two arrays, `before` and `after`
+(more info on request lifecycle [here](request-lifecycle.md)).
+You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
 
 ```dart
 app.before.add((req, res) async => res.end());
@@ -76,7 +78,7 @@ class MyMiddleware implements AngelMiddleware {
 
 ### waterfall
 
-You can chain middleware \(or any request handler together\), if you do not feel like making multiple `chain` calls, or if it is impossible to call chain multiple times, using the [`waterfall`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/waterfall.html) function:
+You can chain middleware \(or any request handler together\), if you do not feel like making multiple `chain` calls, or if it is impossible to call chain multiple times, using the [`waterfall`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/waterfall.html) function:
 
 ```dart
 app.chain(waterfall([
@@ -90,5 +92,5 @@ app.chain(waterfall([
 
 ## Next Up...
 
-Take a good look at [controllers](https://github.com/angel-dart/angel/wiki/Controllers) in Angel!
+Take a good look at [controllers](controllers.md) in Angel!
 

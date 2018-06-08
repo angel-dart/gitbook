@@ -68,7 +68,7 @@ class ApiController extends Controller {
 
 ## Dependency-Injected Controllers
 
-[Controller](https://github.com/angel-dart/gitbook/tree/aeb53fedacf3e203ec7dffb23fdebcc6a058c64f/methods/README.md) have dependencies injected without any additional configuration by you. However, you might want to inject dependencies into the constructor of your controller.
+`Controller`s have dependencies injected without any additional configuration by you. However, you might want to inject dependencies into the constructor of your controller.
 
 ```dart
 @Expose('/controller')

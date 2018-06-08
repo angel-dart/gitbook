@@ -25,7 +25,7 @@ Request handlers can return any Dart value. Return values are handled as follows
 
 ### Other Parameters
 
-Request handlers can take other parameters, instead of just a `RequestContext` and `ResponseContext`. All parameters will be [injected](https://github.com/angel-dart/angel/wiki/Dependency-Injection) into a response, whether from [`req.injections`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/injections.html), [`req.params`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/params.html), or [`req.properties`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/properties.html).
+Request handlers can take other parameters, instead of just a `RequestContext` and `ResponseContext`. All parameters will be [injected](dependency-injection.md) into a response, whether from [`req.injections`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/injections.html), [`req.params`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/params.html), or [`req.properties`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext/properties.html).
 
 Request handlers do not even have to be functions at all. You can provide singleton values as request handlers, and they will always be sent to clients without running any functions.
 
