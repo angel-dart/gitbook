@@ -63,4 +63,4 @@ dart --observe bin/server.dart
 And there you have it - you've created an Angel application!
 
 # Next Up...
-Continue reading to learn about [requests and responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses).
+Continue reading to learn about [requests and responses](Requests and Responses.md).

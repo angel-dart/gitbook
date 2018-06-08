@@ -9,7 +9,7 @@ Angel is inspired by Express, and such, request handlers in general represent th
 * [`RequestContext`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext-class.html) - Contains vital information about the client requesting a resource, such as request method, request body, IP address, etc. The request object can also be used to pass information from one handler to the next. 
 * [`ResponseContext`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/ResponseContext-class.html) - Allows you to send headers, write data, and more, to be sent to the client. To prevent a response from being modified by future handlers, call `res.end()` to prevent further writing.
 
-Both requests and responses contain a Map of `properties` that can be filled with arbitrary data and read/modified at any point during the [request lifecycle](https://github.com/angel-dart/angel/wiki/Request-Lifecycle).
+Both requests and responses contain a Map of `properties` that can be filled with arbitrary data and read/modified at any point during the [request lifecycle](Request-Lifecycle.md).
 
 ## Return Values
 Request handlers can return any Dart value. Return values are handled as follows:
@@ -82,7 +82,7 @@ main() {
 }
 ```
 
-If you [write your own plugin](https://github.com/angel-dart/angel/wiki/Writing-a-Plugin), be sure to use
+If you [write your own plugin](Writing-a-Plugin.md), be sure to use
 the `lazy` alternatives.
 
 For more information, see the API docs:
@@ -92,4 +92,4 @@ For more information, see the API docs:
 [ResponseContext](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/ResponseContext-class.html)
 
 # Next Up...
-Now, let's learn about Angel's [flexible router](https://github.com/angel-dart/angel/wiki/Basic-Routing).
+Now, let's learn about Angel's [flexible router](Basic-Routing).
