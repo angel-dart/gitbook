@@ -16,9 +16,7 @@ app.get('/this-page-does-not-exist', (req, res) async {
 
 Of course, you will probably want to handle these errors, and potentially render views upon catching them.
 
-Fortunately, Angel runs every request in its own [`zone`](https://api.dartlang.org/stable/dart-async/Zone-class.html).
-This enables Angel to catch errors on every request, and not crash the server.
-Unhandled errors are wrapped in instances of `AngelHttpException`, which can be handled as follows.
+Fortunately, Angel runs every request in its own [`zone`](https://api.dartlang.org/stable/dart-async/Zone-class.html). This enables Angel to catch errors on every request, and not crash the server. Unhandled errors are wrapped in instances of `AngelHttpException`, which can be handled as follows.
 
 To provide custom error handling logic:
 
@@ -36,7 +34,6 @@ app.errorHandler = (AngelHttpException e, RequestContext req, ResponseContext re
   }
 }
 ```
-
 
 ## Next Up...
 

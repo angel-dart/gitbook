@@ -9,8 +9,7 @@ dependencies:
     angel_framework: ^1.1.0
 ```
 
-You might also want to install packages such as `angel_static`, `angel_cache`,
-`angel_jael`, and `angel_cors`.
+You might also want to install packages such as `angel_static`, `angel_cache`, `angel_jael`, and `angel_cors`.
 
 Next, run `pub get` on the command line, or in your IDE if it has Dart support. This will install the framework and all of its dependencies.
 

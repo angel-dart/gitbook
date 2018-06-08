@@ -11,12 +11,9 @@ Just like `res.render` in Express, Angel's `ResponseContext` exposes a `Future` 
 
 There is a Mustache templating plug-in for Angel available: [https://github.com/angel-dart/mustache](https://github.com/angel-dart/mustache)
 
-However, it is strongly recommended that you use
-[Jael](https://github.com/angel-dart/jael), the only actively-developed HTML templating
-engine for Dart.
+However, it is strongly recommended that you use [Jael](https://github.com/angel-dart/jael), the only actively-developed HTML templating engine for Dart.
 
-Angel support for Jael is provided through
-[`package:angel_jael`](https://pub.dartlang.org/packages/angel_jael).
+Angel support for Jael is provided through [`package:angel_jael`](https://pub.dartlang.org/packages/angel_jael).
 
 ### Example
 
@@ -55,5 +52,5 @@ main() async {
 ## Next Up...
 
 1. Explore Angel's isomorphic [client library](https://github.com/angel-dart/client).
-2. Find out how to [test Angel applications](testing.md).
+2. Find out how to [test Angel applications](https://github.com/angel-dart/gitbook/tree/a01c5d4d8f4ee5af51a98f770c765ff9e05ead1f/the-basics/testing.md).
 

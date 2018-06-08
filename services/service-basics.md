@@ -111,6 +111,5 @@ var service = app.service('secret'); // Not exposed to REST, but can still be us
 
 ## Next Up...
 
-Reflectively serialize and deserialize data
-within services by wrapping them in a [`TypedService`](typedservice.md).
+Reflectively serialize and deserialize data within services by wrapping them in a [`TypedService`](typedservice.md).
 

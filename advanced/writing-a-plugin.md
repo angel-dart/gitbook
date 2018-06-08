@@ -38,7 +38,7 @@ class MyAwesomePlugin extends AngelPlugin {
 * Use `req.lazyBody()`, `req.lazyFiles()`, etc. if you are running in an `async` context. Otherwise, your plugin may crash applications that lazy-parse request bodies.
 * If you use `req.lazyQuery()`, refrain from using `forceParse`. Never force any additional side effects on the user.
 
-Finally, your plugin should expose common options in a simple way. For example, the (deprecated) [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
+Finally, your plugin should expose common options in a simple way. For example, the \(deprecated\) [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
 
 ```dart
 main() {
