@@ -5,7 +5,7 @@
 
 ## In-Memory Services
 
-The simplest data store to set up is an in-memory one, as it does not require external database setup. It only stores Maps, but it can be wrapped in a [`TypedService`](https://github.com/angel-dart/angel/wiki/TypedService).
+The simplest data store to set up is an in-memory one, as it does not require external database setup. It only stores Maps, but it can be wrapped in a [`TypedService`](typedservice.md).
 
 ```dart
 // routes.dart
@@ -24,5 +24,5 @@ class Todo extends Model {
 
 ## Next Up...
 
-Learn how to implement your own [custom services](https://github.com/angel-dart/angel/wiki/Custom-Services).
+Learn how to implement your own [custom services](custom-services.md).
 

@@ -13,7 +13,7 @@ var http = new AngelHttp.fromSecurityContext(context);
 
 However, a single AngelHttp instance only corresponds to one `HttpServer` instance. To handle secure requests, while also redirecting insecure users to our HTTPS server, you'll need to have a server listening at port 80.
 
-The easiest way to do this is to use the `forceHttps()` function from `package:angel_multiserver`. This returns a [middleware](https://github.com/angel-dart/angel/wiki/Middleware) that sends `302` redirects from plain HTTP URL's to their HTTPS counterparts.
+The easiest way to do this is to use the `forceHttps()` function from `package:angel_multiserver`. This returns a [middleware](../the-basics/middleware.md) that sends `302` redirects from plain HTTP URL's to their HTTPS counterparts.
 
 ```dart
 /// Redirect HTTP URL's to their HTTPS counterparts...

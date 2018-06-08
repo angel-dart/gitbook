@@ -26,12 +26,12 @@ A `HookedServiceEventDispatcher` has one key method you will use: `listen`. In a
 ```dart
 /// Fired when a hooked service is invoked.
 class HookedServiceEvent {
-  static const String INDEXED = "indexed";
-  static const String READ = "read";
-  static const String CREATED = "created";
-  static const String MODIFIED = "modified";
-  static const String UPDATED = "updated";
-  static const String REMOVED = "removed";
+  static const String indexed = "indexed";
+  static const String read = "read";
+  static const String created = "created";
+  static const String modified = "modified";
+  static const String updated = "updated";
+  static const String removed = "removed";
 
   /// The inner service whose method was hooked.
   Service service;

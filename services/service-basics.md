@@ -11,7 +11,7 @@ One of the main concepts within Angel, which is borrowed from FeathersJS, is a _
 
 The Angel core includes the `Service` base class, as well as two in-memory service classes. Database adapter packages, such as [`package:angel_mongo`](https://github.com/angel-dart/mongo) include service classes that let you interact with a database without writing complex code yourself.
 
-Services can also be filtered or reacted to with [service hooks](https://github.com/angel-dart/angel/wiki/Hooks).
+Services can also be filtered or reacted to with [service hooks](hooks.md).
 
 A service looks like this:
 
@@ -111,5 +111,6 @@ var service = app.service('secret'); // Not exposed to REST, but can still be us
 
 ## Next Up...
 
-Reflectively serialize and deserialize data within services by wrapping them in a [`TypedService`](https://github.com/angel-dart/angel/wiki/TypedService).
+Reflectively serialize and deserialize data
+within services by wrapping them in a [`TypedService`](typedservice.md).
 

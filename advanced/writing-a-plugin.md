@@ -2,7 +2,7 @@
 
 [Guidelines](writing-a-plugin.md#guidelines)
 
-Writing a [plug-in](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) is easy. You can provide plug-ins as either functions, or classes:
+Writing a [plug-in](../the-basics/using-plug-ins.md) is easy. You can provide plug-ins as either functions, or classes:
 
 ```dart
 AngelConfigurer awesomeify() => (Angel app) async {
@@ -38,7 +38,7 @@ class MyAwesomePlugin extends AngelPlugin {
 * Use `req.lazyBody()`, `req.lazyFiles()`, etc. if you are running in an `async` context. Otherwise, your plugin may crash applications that lazy-parse request bodies.
 * If you use `req.lazyQuery()`, refrain from using `forceParse`. Never force any additional side effects on the user.
 
-Finally, your plugin should expose common options in a simple way. For example, the [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
+Finally, your plugin should expose common options in a simple way. For example, the (deprecated) [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
 
 ```dart
 main() {
