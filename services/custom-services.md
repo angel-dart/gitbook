@@ -1,8 +1,11 @@
-* [Custom Services](#custom-services)
-  * [`AnonymousService`](#anonymousservice)
-* [Next Up...](#next-up)
+# Custom-Services
 
-# Custom Services
+* [Custom Services](custom-services.md#custom-services)
+  * [`AnonymousService`](custom-services.md#anonymousservice)
+* [Next Up...](custom-services.md#next-up)
+
+## Custom Services
+
 Assuming you have already read [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics), the process of implementing your own service is very straightforward. Simply implement the methods you want to expose.
 
 By default, a service will throw a `405 Method Not Allowed` error if you haven't written any logic to handle a given method. This means you only need to write handlers for operations you plan to actually have carried out.
@@ -20,14 +23,17 @@ class MyService extends Service {
 
 Alternatively, consider using [service hooks](https://github.com/angel-dart/angel/wiki/Hooks). They are the preferred method of modifying Angel services because they do not depend on service implementations.
 
-*Note*: The convention for the `remove` method on services is that if `id == null`, *all entries in the store should be removed*. Obviously, this does not work very well in production, so only allow this to occur on the server side. Common service providers will disable this for clients, unless you explicitly set a flag dictating so.
+_Note_: The convention for the `remove` method on services is that if `id == null`, _all entries in the store should be removed_. Obviously, this does not work very well in production, so only allow this to occur on the server side. Common service providers will disable this for clients, unless you explicitly set a flag dictating so.
 
-## AnonymousService
+### AnonymousService
+
 If you only need to implement a small selection of the common service methods, consider using an `AnonymousService`. They are the functional equivalent of creating a new service class. **Please do not use anonymous services in library packages.**
 
 ```dart
 app.use('/todos', new AnonymousService(index: ([params]) => somehowFetchTodos()));
 ```
 
-# Next Up...
+## Next Up...
+
 Find out how to filter and react to service events with [hooks](https://github.com/angel-dart/angel/wiki/Hooks).
+

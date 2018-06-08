@@ -1,20 +1,24 @@
-* [Rendering Views](#rendering-views)
-  * [Example](#example)
-  * [`ViewGenerator` typedef](#viewgenerator)
-* [Next Up...](#next-up)
+# Rendering-Views
 
-# Rendering Views
+* [Rendering Views](rendering-views.md#rendering-views)
+  * [Example](rendering-views.md#example)
+  * [`ViewGenerator` typedef](rendering-views.md#viewgenerator)
+* [Next Up...](rendering-views.md#next-up)
+
+## Rendering Views
+
 Just like `res.render` in Express, Angel's `ResponseContext` exposes a `Future` called `render`. This invokes whichever function is assigned to your server's `viewGenerator`.
 
-There is a Mustache templating plug-in for Angel available: https://github.com/angel-dart/mustache
+There is a Mustache templating plug-in for Angel available: [https://github.com/angel-dart/mustache](https://github.com/angel-dart/mustache)
 
-## Example
+### Example
 
 ```dart
 app.get('/view', (req, res) async => await res.render('hello', {'locals': ['foo', 'bar']});
 ```
 
-## ViewGenerator
+### ViewGenerator
+
 Angel declares the following typedef:
 
 ```dart
@@ -41,6 +45,8 @@ main() async {
 }
 ```
 
-# Next Up...
+## Next Up...
+
 1. Explore Angel's isomorphic [client library](https://github.com/angel-dart/client).
 2. Find out how to [test Angel applications](https://github.com/angel-dart/angel/wiki/Testing).
+

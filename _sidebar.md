@@ -1,4 +1,7 @@
+# \_Sidebar
+
 Navigation
+
 * [Home](https://github.com/angel-dart/angel/wiki)
 * [Example Projects](https://github.com/angel-example)
 * Social
@@ -7,6 +10,7 @@ Navigation
   * [Angel on YouTube](https://www.youtube.com/playlist?list=PLl3P3tmiT-frEV50VdH_cIrA2YqIyHkkY)
 
 The Basics
+
 * [Installation & Setup](https://github.com/angel-dart/angel/wiki/Installation-&-Setup)
   * [Without the Boilerplate](https://github.com/angel-dart/angel/wiki/Without-the-Boilerplate)
 * [Requests & Responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses)
@@ -22,6 +26,7 @@ The Basics
 * [Command Line](https://github.com/angel-dart/cli)
 
 Services
+
 * [Service Basics](https://github.com/angel-dart/angel/wiki/Service-Basics)
 * [TypedService](https://github.com/angel-dart/angel/wiki/TypedService)
 * [In-Memory](https://github.com/angel-dart/angel/wiki/In-Memory)
@@ -36,17 +41,19 @@ Services
   * [JSON File-based](https://github.com/angel-dart/file_service)
 
 **PostgreSQL ORM**
+
 * [Model Serialization](https://github.com/angel-dart/serialize)
 * [Query Builder + ORM](https://github.com/angel-dart/orm)
 * [Migrations](https://github.com/angel-dart/migration)
 
 Plug-ins
+
 * [Authentication](https://github.com/angel-dart/auth)
   * [Local](https://github.com/angel-dart/auth/wiki/Local-Auth)
   * [Google SSO](https://github.com/angel-dart/auth_google)
   * [Twitter SSO](https://github.com/angel-dart/auth_twitter)
   * [Instagram SSO](https://github.com/angel-dart/auth_instagram)
-  * [OAuth2 (generic)](https://github.com/angel-dart/auth_oauth2)
+  * [OAuth2 \(generic\)](https://github.com/angel-dart/auth_oauth2)
   * [OAuth2 server implementation](https://github.com/angel-dart/oauth2)
 * [Configuration](https://github.com/angel-dart/configuration)
 * [Diagnostics & Logging](https://github.com/angel-dart/diagnostics)
@@ -60,6 +67,7 @@ Plug-ins
 * [Toggle-able Services](https://github.com/angel-dart/toggle)
 
 Middleware/Finalizers
+
 * [CORS](https://github.com/angel-dart/cors)
 * [Response Compression](https://github.com/angel-dart/compress)
 * [Security](https://github.com/angel-dart/security)
@@ -70,12 +78,14 @@ Middleware/Finalizers
 * [`Range`, `If-Range`, `Accept-Ranges` support](https://github.com/angel-dart/range)
 
 Deployment
+
 * [Running in Isolates](https://github.com/angel-example/multithread)
 * [Configuring SSL](https://github.com/angel-dart/angel/wiki/Configuring-SSL)
 * [HTTP/2 Support](https://github.com/angel-dart/http2)
 * [AppEngine](https://github.com/angel-dart/angel/wiki/Deployment-to-AppEngine)
 
 Front-end
+
 * [Mustache Templates](https://github.com/angel-dart/mustache)
 * [Jael template engine](https://github.com/angel-dart/jael)
 * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
@@ -83,6 +93,7 @@ Front-end
 * [Markdown template engine](https://github.com/angel-dart/markdown)
 
 Advanced
+
 * [API Documentation](http://www.dartdocs.org/documentation/angel_common/latest)
 * [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 * [Dependency Injection](https://github.com/angel-dart/angel/wiki/Dependency-Injection)
@@ -96,4 +107,6 @@ Advanced
 * [Real-time polling](https://github.com/angel-dart/poll)
 
 Other
+
 * [Flutter helper widgets](https://github.com/angel-dart/flutter)
+

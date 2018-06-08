@@ -1,9 +1,12 @@
-* [Error Handling](#error-handling)
-  * [Using the Provided Plug-in](#using-the-provided-plug-in)
-  * [Manual Error Handling](#manual-error-handling)
-* [Next Up...](#next-up)
+# Error-Handling
 
-# Error Handling
+* [Error Handling](error-handling.md#error-handling)
+  * [Using the Provided Plug-in](error-handling.md#using-the-provided-plug-in)
+  * [Manual Error Handling](error-handling.md#manual-error-handling)
+* [Next Up...](error-handling.md#next-up)
+
+## Error Handling
+
 Error handling is one of the most important concerns in building Web applications. The easiest way to throw an HTTP exception is to actually `throw` one. Angel provides an `AngelHttpException` class to take care of this.
 
 ```dart
@@ -15,7 +18,7 @@ app.get('/this-page-does-not-exist', (req, res) async {
 
 Of course, you will probably want to handle these errors, and potentially render views upon catching them. There are a few ways of doing this.
 
-## Using the Provided Plug-in
+### Using the Provided Plug-in
 
 The [`angel_errors`](https://github.com/angel-dart/errors) plug-in provides a simple abstraction over the complications of catching errors within Angel.
 
@@ -49,12 +52,14 @@ app.after.add(errors.middleware(defaultStatus: 500));
 errors.fatalErrorHandler = (err) async => foo();
 ```
 
-## Manual error handling
-Angel catches errors in several different spots, so if you want to provide
-error coverage by yourself, hook the following:
+### Manual error handling
+
+Angel catches errors in several different spots, so if you want to provide error coverage by yourself, hook the following:
 
 * `errorHandler` - Used to handle `AngelHttpException` instances. Set this like any other field.
 * `fatalErrorStream` - A broadcast stream, fired when responding with a `ResponseContext` fails.
 
-# Next Up...
+## Next Up...
+
 Congratulations! You have completed the basic Angel tutorials. Take what you've learned on a spin in a small side project, and then move on to learning about [services](https://github.com/angel-dart/angel/wiki/Service-Basics).
+

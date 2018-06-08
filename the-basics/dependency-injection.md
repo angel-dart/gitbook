@@ -1,8 +1,6 @@
-# Dependency Injection
+# Dependency-Injection
 
-Angel uses Emil Persson's [Container](https://pub.dartlang.org/packages/container) for DI. Dependency injection
-makes it easier to build applications with multiple moving parts, because logic can be contained in one location
-and reused at another place in your application.
+Angel uses Emil Persson's [Container](https://pub.dartlang.org/packages/container) for DI. Dependency injection makes it easier to build applications with multiple moving parts, because logic can be contained in one location and reused at another place in your application.
 
 ## Adding a Singleton
 
@@ -69,7 +67,8 @@ class ApiController extends Controller {
 ```
 
 ## Dependency-Injected Controllers
-[Controller](methods) have dependencies injected without any additional configuration by you. However, you might want to inject dependencies into the constructor of your controller.
+
+[Controller](https://github.com/angel-dart/gitbook/tree/aeb53fedacf3e203ec7dffb23fdebcc6a058c64f/methods/README.md) have dependencies injected without any additional configuration by you. However, you might want to inject dependencies into the constructor of your controller.
 
 ```dart
 @Expose('/controller')
@@ -92,3 +91,4 @@ main() async {
   await app.configure(app.container.make(MyController));
 }
 ```
+

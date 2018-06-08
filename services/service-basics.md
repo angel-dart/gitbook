@@ -1,10 +1,13 @@
-* [Services](#services)
-  * [Service Parameters and Middleware](#service-parameters-and-middleware)
-  * [Mounting Services](#mounting-services)
-* [Next Up...](#next-up)
+# Service-Basics
 
-# Services
-One of the main concepts within Angel, which is borrowed from FeathersJS, is a *service*. You more than likely have already dealt with another implementation of the service concept. In Angel, a *service* is a class that acts as a Web interface and exposes CRUD actions operating on a set of data. Angel services extend `Routable`, and thus can be mounted on a certain path and become REST endpoints.
+* [Services](service-basics.md#services)
+  * [Service Parameters and Middleware](service-basics.md#service-parameters-and-middleware)
+  * [Mounting Services](service-basics.md#mounting-services)
+* [Next Up...](service-basics.md#next-up)
+
+## Services
+
+One of the main concepts within Angel, which is borrowed from FeathersJS, is a _service_. You more than likely have already dealt with another implementation of the service concept. In Angel, a _service_ is a class that acts as a Web interface and exposes CRUD actions operating on a set of data. Angel services extend `Routable`, and thus can be mounted on a certain path and become REST endpoints.
 
 The Angel core includes the `Service` base class, as well as two in-memory service classes. Database adapter packages, such as [`package:angel_mongo`](https://github.com/angel-dart/mongo) include service classes that let you interact with a database without writing complex code yourself.
 
@@ -53,8 +56,9 @@ class MyService extends Service {
 }
 ```
 
-## Service Parameters and Middleware
-You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP (i.e., not over Websockets), `req.query` or `req.body` is passed here (`query` for `index`, `read` and `delete`, `body` for `create`, `update` and `modify`). To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
+### Service Parameters and Middleware
+
+You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP \(i.e., not over Websockets\), `req.query` or `req.body` is passed here \(`query` for `index`, `read` and `delete`, `body` for `create`, `update` and `modify`\). To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
 
 ```dart
 Future<bool> myMiddleware(RequestContext req, res) async {
@@ -84,8 +88,9 @@ class MyService extends Service {
 
 `provider` will be a `Providers` class, whose `String via` will tell you where the service is being accessed from, i.e. `'rest'` or `'websocket'`.
 
-## Mounting Services
-As mentioned above, services extend `Routable`, so you can simply `app.use()` them. You can also supplement them with additional routes or middleware, placed *before* the mounting of a service:
+### Mounting Services
+
+As mentioned above, services extend `Routable`, so you can simply `app.use()` them. You can also supplement them with additional routes or middleware, placed _before_ the mounting of a service:
 
 ```dart
 app.get("/user/:id/todos", (id) => fetchUserTodos(id)));
@@ -104,5 +109,7 @@ var service = app.service('user'); // The user service
 var service = app.service('secret'); // Not exposed to REST, but can still be used easily
 ```
 
-# Next Up...
+## Next Up...
+
 Reflectively serialize and deserialize data within services by wrapping them in a [`TypedService`](https://github.com/angel-dart/angel/wiki/TypedService).
+

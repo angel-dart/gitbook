@@ -1,14 +1,18 @@
-* [Getting Started](#getting-started)
-  * [Installation](#installation)
-    * [Prerequisites](#prequisites)
-* [Next Up...](#next-up)
+# Installation
 
-# Getting Started
+* [Getting Started](installation.md#getting-started)
+  * [Installation](installation.md#installation)
+    * [Prerequisites](installation.md#prequisites)
+* [Next Up...](installation.md#next-up)
+
+## Getting Started
+
 Let's get it started, ha!
 
-## Installation
+### Installation
 
-### Prerequisites
+#### Prerequisites
+
 * Firstly, ensure you have the [Dart SDK](https://www.dartlang.org/downloads/) installed.
 
 Now, install the [Angel CLI](https://github.com/angel-dart/cli). The CLI includes several code generators and commands that will help you expedite your development cycle.
@@ -33,7 +37,7 @@ $ angel init
 
 You'll notice that the following folder structure is there for you:
 
-```
+```text
 .idea/ - IntelliJ metadata.
 .vscode/ - VSCode metadata.
 bin/ - Contains a script to run the application.
@@ -62,5 +66,7 @@ dart --observe bin/server.dart
 
 And there you have it - you've created an Angel application!
 
-# Next Up...
-Continue reading to learn about [requests and responses](Requests and Responses.md).
+## Next Up...
+
+Continue reading to learn about [requests and responses](https://github.com/angel-dart/gitbook/tree/a8ecb4986b1c2d254f84e86e2d1cde81cf2d8fb6/Requests%20and%20Responses.md).
+

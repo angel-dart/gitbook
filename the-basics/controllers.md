@@ -1,15 +1,18 @@
-* [Controllers](#controllers)
-  * [`@Expose()`](#expose)
-  * [Allowing Null Values](#allowing-null-values)
-  * [Named Controllers and Actions](#named-controllers-and-actions)
-  * [Interacting with Requests and Responses](#interacting-with-requests-and-responses)
-  * [Transforming Data](#transforming-data)
-* [Next Up...](#next-up)
-
 # Controllers
-Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) format. You can also use the [`group()`](https://github.com/angel-dart/angel/wiki/Basic-Routing#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/Router-class.html).
 
-The metadata on controller classes is processed via reflection *only once*, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](https://github.com/angel-dart/angel/wiki/Dependency-Injection).
+* [Controllers](controllers.md#controllers)
+  * [`@Expose()`](controllers.md#expose)
+  * [Allowing Null Values](controllers.md#allowing-null-values)
+  * [Named Controllers and Actions](controllers.md#named-controllers-and-actions)
+  * [Interacting with Requests and Responses](controllers.md#interacting-with-requests-and-responses)
+  * [Transforming Data](controllers.md#transforming-data)
+* [Next Up...](controllers.md#next-up)
+
+## Controllers
+
+Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller) format. You can also use the [`group()`](https://github.com/angel-dart/angel/wiki/Basic-Routing#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/Router-class.html).
+
+The metadata on controller classes is processed via reflection _only once_, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](https://github.com/angel-dart/angel/wiki/Dependency-Injection).
 
 ```dart
 import 'package:angel_framework/angel_framework.dart';
@@ -35,7 +38,8 @@ main() async {
 
 Rather than extending from `Routable`, controllers act as [plugins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins) when called. This pseudo-plugin will wire all your routes for you.
 
-## @Expose()
+### @Expose\(\)
+
 The glue that holds it all together is the `Expose` annotation:
 
 ```dart
@@ -54,14 +58,16 @@ class Expose {
 }
 ```
 
-## Allowing Null Values
+### Allowing Null Values
+
 Most fields are self-explanatory, save for `as` and `allowNull`. See, request parameters are mapped to function parameters on each handler. If a parameter is `null`, an error will be thrown. To prevent this, you can pass its name to `allowNull`.
 
 ```dart
 @Expose("/foo/:id?", allowNull: const["id"])
 ```
 
-## Named Controllers and Actions
+### Named Controllers and Actions
+
 The other is `as`. This allows you to specify a custom name for a controller class or action. `ResponseContext` contains a method, `redirectToAction` that can redirect to a controller action.
 
 ```dart
@@ -81,7 +87,8 @@ main() async {
 
 If you do not specify an `as`, then controllers and actions will be available by their names in code. Reflection is cool, huh?
 
-## Interacting with Requests and Responses
+### Interacting with Requests and Responses
+
 Controllers can also interact with [requests and responses](https://github.com/angel-dart/angel/wiki/Requests-&-Responses). All you have to do is declare a `RequestContext` or `ResponseContext` as a parameter, and it will be passed to the function.
 
 ```dart
@@ -94,7 +101,8 @@ class HelloController extends Controller {
 }
 ```
 
-## Transforming Data
+### Transforming Data
+
 You can use [middleware](https://github.com/angel-dart/angel/wiki/Middleware) to de/serialize data to be processed in a controller method.
 
 ```dart
@@ -121,6 +129,8 @@ main() async {
 }
 ```
 
-# Next Up...
+## Next Up...
+
 1. How to [handle file uploads](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61) with Angel
 2. [Using Angel Plug-ins](https://github.com/angel-dart/angel/wiki/Using-Plug-ins)
+

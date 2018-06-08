@@ -1,9 +1,12 @@
-* [Hooks](#hooks)
-* [Bundled Hooks](#bundled-hooks)
-* [Next Up...](#next-up)
-
 # Hooks
-Another concept borrowed from FeathersJS is the concept of *hooking services*. This is a mechanism that allows you to separate concerns within your application. For example, many sites send their users confirmation e-mails after successful registration. The logic to do this is often included in the same place as the code to create the user. Hooks allow you to keep the logic for these two tasks, which are more or less unrelated, in two separate places. And what's more, this frees you up to change your service code without having to update the confirmation code in multiple places. For example, you can easily use an in-memory user store in development, and a MongoDB one in production, and use the same confirmation code for each service. So, let's take a look.
+
+* [Hooks](hooks.md#hooks)
+* [Bundled Hooks](hooks.md#bundled-hooks)
+* [Next Up...](hooks.md#next-up)
+
+## Hooks
+
+Another concept borrowed from FeathersJS is the concept of _hooking services_. This is a mechanism that allows you to separate concerns within your application. For example, many sites send their users confirmation e-mails after successful registration. The logic to do this is often included in the same place as the code to create the user. Hooks allow you to keep the logic for these two tasks, which are more or less unrelated, in two separate places. And what's more, this frees you up to change your service code without having to update the confirmation code in multiple places. For example, you can easily use an in-memory user store in development, and a MongoDB one in production, and use the same confirmation code for each service. So, let's take a look.
 
 When you `use` a service class, Angel can optionally wrap it in a `HookedService` class. A `HookedService` fires events before and after its inner service runs. This opens the opportunity for events to be canceled, or have parameters modified. `use` takes a named parameter `{bool hooked: true}`. You can also affix a `@Hooked` annotation to your service class for the same effect.
 
@@ -96,9 +99,9 @@ class MyService extends Service {
 }
 ```
 
-# Bundled Hooks
-There are several hooks shipped with the Angel framework:
-https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html
+## Bundled Hooks
+
+There are several hooks shipped with the Angel framework: [https://www.dartdocs.org/documentation/angel\_framework/latest/angel\_framework.hooks/angel\_framework.hooks-library.html](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html)
 
 ```dart
 import 'package:angel_framework/hooks.dart` as hooks;
@@ -109,5 +112,7 @@ main() {
 }
 ```
 
-# Next Up...
-Congratulations! Not only have you gotten through the basic Angel tutorials, but you've also completed the service tutorials! However, there's still a lot more to Angel for you to explore. Check out the sidebar for more! ***Happy coding!***
+## Next Up...
+
+Congratulations! Not only have you gotten through the basic Angel tutorials, but you've also completed the service tutorials! However, there's still a lot more to Angel for you to explore. Check out the sidebar for more! _**Happy coding!**_
+
