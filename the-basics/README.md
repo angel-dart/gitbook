@@ -7,7 +7,8 @@
 * [Middleware](middleware.md)
 * [Controllers](controllers.md)
 * Handling File Uploads
-    * [Legacy Tutorial](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61)
+  * [Angel `1.1.x`](handling-file-uploads.md)
+  * [Legacy Tutorial](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61)
 * [Using Plug-ins](using-plug-ins.md)
 * [Rendering Views](rendering-views.md)
 * [REST Client](https://github.com/angel-dart/client)
