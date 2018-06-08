@@ -100,5 +100,5 @@ For more information, see the API docs:
 
 ## Next Up...
 
-Now, let's learn about Angel's [flexible router](https://github.com/angel-dart/gitbook/tree/a8ecb4986b1c2d254f84e86e2d1cde81cf2d8fb6/Basic-Routing/README.md).
+Now, let's learn about Angel's [flexible router](basic-routing.md).
 

@@ -68,5 +68,5 @@ And there you have it - you've created an Angel application!
 
 ## Next Up...
 
-Continue reading to learn about [requests and responses](https://github.com/angel-dart/gitbook/tree/a8ecb4986b1c2d254f84e86e2d1cde81cf2d8fb6/Requests%20and%20Responses.md).
+Continue reading to learn about [requests and responses](requests-and-responses.md).
 
