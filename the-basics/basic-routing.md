@@ -1,5 +1,3 @@
-# Basic-Routing
-
 * [Routing](basic-routing.md#routing)
 * [Route Parameters](basic-routing.md#route-parameters)
 * [`RegExp` Routes](basic-routing.md#regexp-routes)

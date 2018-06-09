@@ -2,7 +2,8 @@
 
 [Guidelines](writing-a-plugin.md#guidelines)
 
-Writing a [plug-in](../the-basics/using-plug-ins.md) is easy. You can provide plug-ins as either functions, or classes:
+Writing a [plug-in](../the-basics/using-plug-ins)
+is easy. You can provide plug-ins as either functions, or classes:
 
 ```dart
 AngelConfigurer awesomeify() => (Angel app) async {

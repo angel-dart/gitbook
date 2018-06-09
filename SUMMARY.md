@@ -22,6 +22,9 @@
   * [Error Handling](the-basics/error-handling.md)
   * [Command Line](https://github.com/angel-dart/cli)
 
+* Flutter
+  * [Flutter helper widgets](https://github.com/angel-dart/flutter)
+
 * Services
   * [Service Basics](services/service-basics.md)
   * [TypedService](services/typedservice.md)
@@ -35,11 +38,6 @@
     * [MongoDB](https://github.com/angel-dart/mongo)
     * [RethinkDB](https://github.com/angel-dart/rethink)
     * [JSON File-based](https://github.com/angel-dart/file_service)
-
-* PostgreSQL ORM
-  * [Model Serialization](https://github.com/angel-dart/serialize)
-  * [Query Builder + ORM](https://github.com/angel-dart/orm)
-  * [Migrations](https://github.com/angel-dart/migration)
 
 * Plug-ins
   * [Authentication](https://github.com/angel-dart/auth)
@@ -70,6 +68,11 @@
   * [Pagination](https://github.com/angel-dart/paginate)
   * [`Range`, `If-Range`, `Accept-Ranges` support](https://github.com/angel-dart/range)
 
+* PostgreSQL ORM
+  * [Model Serialization](https://github.com/angel-dart/serialize)
+  * [Query Builder + ORM](https://github.com/angel-dart/orm)
+  * [Migrations](https://github.com/angel-dart/migration)
+
 * Deployment
   * [Running in Isolates](https://github.com/angel-example/multithread)
   * [Configuring SSL](deployment/configuring-ssl.md)
@@ -77,12 +80,17 @@
   * [AppEngine](deployment/deployment-to-appengine.md)
   * [Production Mode](deployment/production-mode.md)
 
-* Flutter
-  * [Flutter helper widgets](https://github.com/angel-dart/flutter)
-
 * Front-end
   * [Mustache Templates](https://github.com/angel-dart/mustache)
-  * [Jael template engine](https://github.com/angel-dart/jael)
+  * [Jael template engine](front-end/jel)
+    * [Github](https://github.com/angel-dart/jael)
+    * [Basics](front-end/jael/Basics.md)
+    * [Directive: `declare`](front-end/jael/Directive:-declare.md)
+    * [Directive: `for-each`](front-end/jael/Directive:-for-each.md)
+    * [Directive: `extend`](front-end/jael/Directive:-extend.md)
+    * [Directive: `if`](front-end/jael/Directive:-if.md)
+    * [Directive: `include`](front-end/jael/Directive:-include.md)
+    * [Directive: `switch`](front-end/jael/Directive:-switch.md)
   * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
   * [`html_builder`-based engine](https://github.com/angel-dart/html)
   * [Markdown template engine](https://github.com/angel-dart/markdown)
