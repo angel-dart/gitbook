@@ -58,16 +58,18 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 
 ### Global Middleware
 
-`Routable` instances contain two arrays, `before` and `after` \(more info on request lifecycle [here](request-lifecycle.md)\). You can add middleware to these to run before and after every requests, respectively. This also supports using named middleware, of course.
+To add a handler that handles *every* request, call `app.use`. This is equivalent to calling `app.all('*', <handler>)`. \(more info on request lifecycle [here](request-lifecycle.md)\). 
+
+This pattern is seen throughout many Angel plugins, such as `VirtualDirectory` or `Proxy`.
 
 ```dart
-app.before.add((req, res) async => res.end());
+app.use((req, res) async => res.end());
 ```
 
-For more complicated middleware, implement the `AngelMiddleware` class.
+For more complicated middleware, you can also create a class:
 
 ```dart
-class MyMiddleware implements AngelMiddleware {
+class MyMiddleware {
   Future<bool> call(Angel app) async {
     // Do something...
   }
