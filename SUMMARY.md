@@ -1,5 +1,6 @@
 * [Example Projects](https://github.com/angel-example)
 * [Awesome Angel](https://github.com/angel-dart/awesome-angel)
+* [1.1.0 Migration Guide](migration-guide.md)
 
 * Social
   * [Angel on Gitter](https://gitter.im/angel_dart/discussion)
@@ -21,7 +22,8 @@
   * [REST Client](https://github.com/angel-dart/client)
   * [Testing](the-basics/testing.md)
   * [Error Handling](the-basics/error-handling.md)
-  * [Command Line](https://github.com/angel-dart/cli)
+  * [Pattern Matching and `Parameter`](the-basics/pattern-matching.md)
+  * [Command Line](the-basics/cli.md)
 
 * Flutter
   * [Writing a Chat App](https://dart.academy/building-a-real-time-chat-app-with-angel-and-flutter/)
@@ -78,6 +80,7 @@
   * [Running in Isolates](https://github.com/angel-example/multithread)
   * [Configuring SSL](deployment/configuring-ssl.md)
   * [HTTP/2 Support](https://github.com/angel-dart/http2)
+  * [Ubuntu and `nginx`](deployment-ubuntu-and-nginx.md)
   * [AppEngine](deployment/deployment-to-appengine.md)
   * [Production Mode](deployment/production-mode.md)
 
