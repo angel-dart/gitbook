@@ -12,7 +12,7 @@
     * [Without the Boilerplate](the-basics/without-the-boilerplate.md)
   * [Requests & Responses](the-basics/requests-and-responses.md)
   * [Dependency Injection](the-basics/dependency-injection.md)
-  * [Basic Routing](the-basics/routing.md)
+  * [Basic Routing](the-basics/basic-routing.md)
   * [Request Lifecycle](the-basics/request-lifecycle.md)
   * [Middleware](the-basics/middleware.md)
   * [Controllers](the-basics/controllers.md)

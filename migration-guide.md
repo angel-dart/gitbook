@@ -39,4 +39,4 @@ In 1.1.0, the following were completely removed:
 # How should I define global middleware?
 `app.use((req, res) => ...)`
 
-Much cleaner in 1.1.0. 😄
+Much cleaner in `1.1.0`. 😄
