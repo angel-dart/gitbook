@@ -13,8 +13,6 @@
 
 [Contribution Guidelines](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
 
-[Roadmap](https://github.com/angel-dart/roadmap)
-
 [File an Issue](https://github.com/angel-dart/angel/issues)
 
 [API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)
