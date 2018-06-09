@@ -60,7 +60,7 @@ parent.get('/foo', 'Never shown', middleware: ['child.deny']);
 
 To add a handler that handles *every* request, call `app.use`. This is equivalent to calling `app.all('*', <handler>)`. \(more info on request lifecycle [here](request-lifecycle.md)\). 
 
-This pattern is seen throughout many Angel plugins, such as `VirtualDirectory` or `Proxy`.
+
 
 ```dart
 app.use((req, res) async => res.end());
@@ -74,6 +74,21 @@ class MyMiddleware {
     // Do something...
   }
 }
+```
+
+Canonically, when using a class as a request handler, it should provide a `handleRequest(RequestContext, ResponseContext)` method. This pattern is seen throughout many Angel plugins, such as `VirtualDirectory` or `Proxy`.
+
+The reason for this is that a name like `handleRequest` makes it very clear to anyone reading the code what it is supposed to do.
+This is the same rationale behind [controllers](controllers.md) providing a `configureServer` method.
+
+```dart
+class MyCanonicalHandler {
+ Future<bool> handleRequest(RequestContext req, ResponseContext res) async {
+  // Do something cool...
+ }
+}
+
+app.use(new MyCanonicalHandler().handleRequest);
 ```
 
 ### waterfall
