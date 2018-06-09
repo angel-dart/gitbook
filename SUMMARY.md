@@ -1,4 +1,5 @@
 * [Example Projects](https://github.com/angel-example)
+* [Awesome Angel](https://github.com/angel-dart/awesome-angel)
 
 * Social
   * [Angel on Gitter](https://gitter.im/angel_dart/discussion)
@@ -23,6 +24,7 @@
   * [Command Line](https://github.com/angel-dart/cli)
 
 * Flutter
+  * [Writing a Chat App](https://dart.academy/building-a-real-time-chat-app-with-angel-and-flutter/)
   * [Flutter helper widgets](https://github.com/angel-dart/flutter)
 
 * Services
@@ -30,7 +32,6 @@
   * [TypedService](services/typedservice.md)
   * [In-Memory](services/in-memory.md)
   * [Custom Services](services/custom-services.md)
-    * [Proper Service Implementation](services/proper-service-implementation.md)
   * [Hooks](services/hooks.md)
     * [Bundled Hooks](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html)
   * [Database-Agnostic Relations](https://github.com/angel-dart/relations)
@@ -82,7 +83,7 @@
 
 * Front-end
   * [Mustache Templates](https://github.com/angel-dart/mustache)
-  * [Jael template engine](front-end/jel)
+  * [Jael template engine](front-end/jael)
     * [Github](https://github.com/angel-dart/jael)
     * [Basics](front-end/jael/Basics.md)
     * [Directive: `declare`](front-end/jael/Directive:-declare.md)
@@ -94,6 +95,7 @@
   * [`compiled_mustache`-based engine](https://github.com/thislooksfun/angel_compiled_mustache)
   * [`html_builder`-based engine](https://github.com/angel-dart/html)
   * [Markdown template engine](https://github.com/angel-dart/markdown)
+  * [Using Angel with Angular](https://dart.academy/using-angel-with-angular2/)
 
 * Advanced
   * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)

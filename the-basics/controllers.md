@@ -125,7 +125,7 @@ class UserController extends Controller {
 
 main() async {
   Angel app = new Angel();
-  await app.configure(new UserController());
+  await app.configure(new UserController().configureServer);
 }
 ```
 
