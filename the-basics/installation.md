@@ -15,7 +15,7 @@ Let's get it started, ha!
 
 * Firstly, ensure you have the [Dart SDK](https://www.dartlang.org/downloads/) installed.
 
-Now, install the [Angel CLI](https://github.com/angel-dart/cli). The CLI includes several code generators and commands that will help you expedite your development cycle.
+Now, install the [Angel CLI](cli.md). The CLI includes several code generators and commands that will help you expedite your development cycle.
 
 ```bash
 $ pub global activate angel_cli
