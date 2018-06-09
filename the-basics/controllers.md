@@ -10,7 +10,7 @@
 
 ## Controllers
 
-Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller) format. You can also use the [`group()`](https://github.com/angel-dart/angel/wiki/Basic-Routing#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_common/Router-class.html).
+Angel has built-in support for controllers. This is yet another way to define routes in a manageable group, and can be leveraged to structure your application in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller) format. You can also use the [`group()`](basic-routing.md#route-groups) method of any [`Router`](https://www.dartdocs.org/documentation/angel_common/latest/angel_framework/Router-class.html).
 
 The metadata on controller classes is processed via reflection _only once_, at startup. Do not believe that your controllers will be crippled by reflection during request handling, because that possibility is eliminated by [pre-injecting dependencies](dependency-injection.md).
 
@@ -32,7 +32,7 @@ class TodoController extends Controller {
 
 main() async {
   Angel app = new Angel();
-  await app.configure(new TodoController());
+  await app.configure(new TodoController().configureServer);
 }
 ```
 
