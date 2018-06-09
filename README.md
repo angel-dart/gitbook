@@ -32,5 +32,5 @@ For this to work, Angel must be flexible, and have a low learning curve. Thus, t
 The final goal of Angel is **scalability**. As your application grows, Angel aims to continue working, with little or no change in server-side configuration.
 
 ## Let's go!
-Ready to take a swing? [Getting started](the-basics/installation) is simple.
+Ready to take a swing? [Getting started](the-basics/installation.md) is simple.
 
