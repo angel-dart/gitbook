@@ -77,10 +77,10 @@
   * [Migrations](https://github.com/angel-dart/migration)
 
 * Deployment
-  * [Running in Isolates](https://github.com/angel-example/multithread)
+  * [Running in Isolates](deployment/running-in-isolates.md)
   * [Configuring SSL](deployment/configuring-ssl.md)
   * [HTTP/2 Support](https://github.com/angel-dart/http2)
-  * [Ubuntu and `nginx`](deployment-ubuntu-and-nginx.md)
+  * [Ubuntu and `nginx`](deployment/ubuntu-and-nginx.md)
   * [AppEngine](deployment/deployment-to-appengine.md)
   * [Production Mode](deployment/production-mode.md)
 
