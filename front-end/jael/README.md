@@ -58,4 +58,4 @@ Jael can easily be used in any application with the following two packages:
 
 However, [Angel](https://angel-dart.github.io) users only need install `package:angel_jael` to include
 templating in their server-side applications. One of Angel's goals is to make Web development faster, and having
-a tool like Jail at its disposal only brings that goal even closer to fruition.
+a tool like Jael at its disposal only brings that goal even closer to fruition.
