@@ -86,9 +86,11 @@
 
 * Front-end
   * [Mustache Templates](https://github.com/angel-dart/mustache)
-  * [Jael template engine](front-end/jael)
+  * [Jael template engine](front-end/jael/README.md)
     * [Github](https://github.com/angel-dart/jael)
     * [Basics](front-end/jael/Basics.md)
+    * [Custom Elements](front-end/jael/Custom-Elements.md)
+    * [Strict Resolution](front-end/jael/Strict-Resolution.md)
     * [Directive: `declare`](front-end/jael/Directive:-declare.md)
     * [Directive: `for-each`](front-end/jael/Directive:-for-each.md)
     * [Directive: `extend`](front-end/jael/Directive:-extend.md)

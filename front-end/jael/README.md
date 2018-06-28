@@ -2,6 +2,17 @@
 Although it can be used in any application, it comes with first-class support for the
 [Angel](https://angel-dart.github.io) framework.
 
+Though its syntax is but a superset of HTML, it supports features such as:
+* **Custom elements**
+* Loops
+* Conditionals
+* Template inheritance
+* Block scoping
+* `switch` syntax
+* Interpolation of any Dart expression
+
+### Small Example
+
 ```html
 <!-- layout.jl -->
 <html>
@@ -16,11 +27,17 @@ Although it can be used in any application, it comes with first-class support fo
     </body>
 </html>
 
-<!-- hello.jl -->
-<extend src="layout.jl">
-  <block name="content">
+<!-- user-info.jl -->
+<element name="user-info">
     <img src=user.avatar ?? "http://example.com/img/default-avatar">
     Hello, {{ user.name }}!
+</element>
+
+<!-- hello.jl -->
+<extend src="layout.jl">
+  <include src="user-info.jl" />
+  <block name="content">
+    <user-info @user=getCurrentlyAuthenticatedUserSomehow() />
   </block>
 </extend>
 ```
