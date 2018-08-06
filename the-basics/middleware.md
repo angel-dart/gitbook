@@ -6,6 +6,7 @@
   * [Named Middleware](middleware.md#named-middleware)
   * [Global Middleware](middleware.md#global-middleware)
   * [`waterfall([...])`](middleware.md#waterfall)
+  * [**Maintaining Code Readability](middleware.md#maintaining-code-readability)
 * [Next Up...](middleware.md#next-up)
 
 ## Middleware
@@ -105,7 +106,7 @@ app.chain(waterfall([
 ])).get(...);
 ```
 
-## Maintaining code readability
+### Maintaining Code Readability
 
 Note that a cleaner representation is:
 
