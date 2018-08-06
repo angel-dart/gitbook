@@ -105,6 +105,55 @@ app.chain(waterfall([
 ])).get(...);
 ```
 
+## Maintaining code readability
+
+Note that a cleaner representation is:
+
+```dart
+app.get('/the-route', waterfall([
+  banIp('127.0.0.1'),
+  'auth',
+  ensureUserHasAccess(),
+  (req, res) async => true,
+  takeOutTheTrash()
+  (req, res) {
+   // Your route handler here...
+  }
+]));
+```
+
+In general, consider it a code smell to stack multiple handlers onto a route like this; it hampers readability,
+and in general just doesn't look good.
+
+Instead, when you have multiple handlers, you can split them into multiple `waterfall` calls, assigned to variables,
+which have the added benefit of communicating what each set of middleware does:
+
+```dart
+var authorizationMiddleware = waterfall([
+ banIp('127.0.0.1'),
+ requireAuthentication(),
+ ensureUserHasAccess(),
+]);
+
+var someOtherMiddleware = waterfall([
+ (req, res) async => true,
+ takeOutTheTrash(),
+]);
+
+var theActualRouteHandler = (req, res) async {
+ // Handle the request...
+};
+
+app.get('/the-route', waterfall([
+ authorizationMiddleware,
+ someOtherMiddleware,
+ theActualRouteHandler,
+]);
+
+```
+
+**Tip**: Prefer using named functions as handlers, rather than anonymous functions, or concrete objects.
+
 ## Next Up...
 
 Take a good look at [controllers](controllers.md) in Angel!
