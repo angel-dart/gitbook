@@ -1,23 +1,8 @@
 {
-  "plugins": ["sharing", "versions"],
-  "pluginsConfig": {
-    "versions": {
-      "gitbookConfigURL": "https://raw.githubusercontent.com/angel-dart/history/gh-pages/book.json",
-      "options": [
-        {
-          "value": "https://github.com/angel-dart/gitbook/blob/1.x",
-          "text": "1.x"
-        },
-        {
-          "value": "https://github.com/angel-dart/gitbook/blob/master/2.x",
-          "text": "Version 2.x"
-        },
-        {
-          "value": "https://github.com/angel-dart/gitbook/blob/master",
-          "text": "Current",
-          "selected": true
+    "plugins": [ "sharing", "versions" ],
+    "pluginsConfig": {
+        "versions": {
+            "type": "branches"
         }
-      ]
     }
-  }
 }
