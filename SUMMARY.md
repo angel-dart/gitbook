@@ -1,11 +1,15 @@
-* [Example Projects](https://github.com/angel-example)
+* [Example Projects](https://github.com/angel-dart/examples-v2)
 * [Awesome Angel](https://github.com/angel-dart/awesome-angel)
-* [1.1.0 Migration Guide](migration-guide.md)
+
+* Migration from Angel 1.1.x
+  * [Rationale - Why a new Version?](migration/rationale.md)
+  * [Framework Changelog](https://github.com/angel-dart/framework/blob/master/CHANGELOG.md)
+  * [2.0.0 Migration Guide](migration/migration-guide.md)
 
 * Social
   * [Angel on Gitter](https://gitter.im/angel_dart/discussion)
-  * [Angel on Medium](https://medium.com/the-angel-framework)
-  * [Angel on YouTube](https://www.youtube.com/playlist?list=PLl3P3tmiT-frEV50VdH_cIrA2YqIyHkkY)
+  * [Angel on YouTube](https://www.youtube.com/watch?v=52hazf35b0M&list=PLl3P3tmiT-fqGCB2vSPq8HhpugEDNWUo6)
+  * [Angel Blog Entries](https://thosakwe.com/tag/angel)
 
 * The Basics
   * [Installation & Setup](the-basics/installation.md)
@@ -16,8 +20,8 @@
   * [Request Lifecycle](the-basics/request-lifecycle.md)
   * [Middleware](the-basics/middleware.md)
   * [Controllers](the-basics/controllers.md)
-  * [Handling File Uploads](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61)
-  * [Using Plug-ins](the-basics/using-plug-ins)
+  * [Handling File Uploads](the-basics/file-uploads.md)
+  * [Using Plug-ins](the-basics/using-plug-ins.md)
   * [Rendering Views](the-basics/rendering-views.md)
   * [REST Client](https://github.com/angel-dart/client)
   * [Testing](the-basics/testing.md)
@@ -104,8 +108,8 @@
 
 * Advanced
   * [API Documentation](http://www.dartdocs.org/documentation/angel_framework/latest)
-  * [Contribute to Angel](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md)
-  * [Scaling & Load Balancing](https://github.com/angel-dart/multiserver)
+  * [Contribute to Angel](https://github.com/angel-dart/angel)
+  * [Production Utilities](https://github.com/angel-dart/production)
   * [Standalone Router](https://github.com/angel-dart/route)
   * [Writing a Plugin](advanced/writing-a-plugin.md)
   * [Task Engine](https://github.com/angel-dart/task)
