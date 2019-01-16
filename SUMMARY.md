@@ -2,6 +2,7 @@
     * [Getting Started](guides/getting-started.md)
     * [Dependency Injection Patterns](https://thosakwe.com/dependency-injection-patterns-in-angel-2/)
 * [Example Projects](https://github.com/angel-dart/examples-v2)
+* [YouTube Tutorials](https://www.youtube.com/playlist?list=PLl3P3tmiT-fqGCB2vSPq8HhpugEDNWUo6)
 * [Ecosystem](https://github.com/angel-dart/awesome-angel)
 * Packages
   * [Authentication](https://github.com/angel-dart/auth)
