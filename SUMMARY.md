@@ -4,7 +4,7 @@
   * [2.0.0 Migration Guide](migration/migration-guide.md)
 * Guides
     * [Getting Started](guides/getting-started.md)
-    * [Basic Routing](guides/basic_routing.md)
+    * [Basic Routing](guides/basic-routing.md)
     * [Dependency Injection Patterns](https://thosakwe.com/dependency-injection-patterns-in-angel-2/)
     * [Installation & Setup](guides/installation.md)
     * [Without the Boilerplate](guides/without-the-boilerplate.md)
