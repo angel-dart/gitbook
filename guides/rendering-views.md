@@ -11,9 +11,15 @@ Just like `res.render` in Express, Angel's `ResponseContext` exposes a `Future` 
 
 There is a Mustache templating plug-in for Angel available: [https://github.com/angel-dart/mustache](https://github.com/angel-dart/mustache)
 
-However, it is strongly recommended that you use [Jael](https://github.com/angel-dart/jael), the only actively-developed HTML templating engine for Dart.
+There is also [Jael](https://github.com/angel-dart/jael), one of the few actively-developed HTML templating engines for Dart.
 
 Angel support for Jael is provided through [`package:angel_jael`](https://pub.dartlang.org/packages/angel_jael).
+
+Another is Jinja2, which was recently ported by to Dart by
+[Olzhas Suleimen](https://github.com/ykmnkmi/jinja.dart).
+
+Angel support for Jinja2 can be found here:
+https://pub.dartlang.org/packages/angel_jinja
 
 ### Example
 
@@ -36,14 +42,14 @@ A templating plug-in can assign one of these to `app.viewGenerator` to set itsel
 import 'dart:io';
 import 'package:angel_framework/angel_framework.dart';
 
-Future plugin(Angel app) async {
+Future<void> plugin(Angel app) async {
   app.viewGenerator = (String path, [Map data]) async {
     return "Requested view $path with locals: $data";
   };
 }
 
 main() async {
-  Angel app = new Angel();
+  var app = new Angel();
   await app.configure(plugin);
   await app.startServer();
 }
@@ -52,5 +58,5 @@ main() async {
 ## Next Up...
 
 1. Explore Angel's isomorphic [client library](https://github.com/angel-dart/client).
-2. Find out how to [test Angel applications](https://github.com/angel-dart/gitbook/tree/a01c5d4d8f4ee5af51a98f770c765ff9e05ead1f/the-basics/testing.md).
+2. Find out how to [test Angel applications](testing.md).
 
