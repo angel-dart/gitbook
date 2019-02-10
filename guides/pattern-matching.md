@@ -1,4 +1,4 @@
-As of `1.1.0`, `package:angel_framework` has nice support for injecting values from HTTP headers, query string, and session/cookie values, as well as pattern-matching for request handlers. 
+`package:angel_framework` has nice support for injecting values from HTTP headers, query string, and session/cookie values, as well as pattern-matching for request handlers. 
 
 These act as a clean shorthand for commonly-used
 functionality.
@@ -6,33 +6,33 @@ functionality.
 Here is a simple example of each of them in action:
 
 ```dart
-app.get('/cookie', (@CookieValue('token') String jwt) {
+app.get('/cookie', ioc((@CookieValue('token') String jwt) {
     return jwt;
-});
+}));
 
-app.get('/header', (@Header('x-foo') String header) {
+app.get('/header', ioc((@Header('x-foo') String header) {
     return header;
-});
+}));
 
-app.get('/query', (@Query('q') String query) {
+app.get('/query', ioc((@Query('q') String query) {
     return query;
-});
+}));
 
-app.get('/session', (@Session('foo') String foo) {
+app.get('/session', ioc((@Session('foo') String foo) {
     return foo;
-});
+}));
 
-app.get('/match', (@Query('mode', match: 'pos') String mode) {
+app.get('/match', ioc((@Query('mode', match: 'pos') String mode) {
     return 'YES $mode';
-});
+}));
 
-app.get('/match', (@Query('mode', match: 'neg') String mode) {
+app.get('/match', ioc((@Query('mode', match: 'neg') String mode) {
     return 'NO $mode';
-});
+}));
 
-app.get('/match', (@Query('mode') String mode) {
+app.get('/match', ioc((@Query('mode') String mode) {
     return 'DEFAULT $mode';
-});
+}));
 ```
 
 ## `@Header()`
@@ -55,4 +55,4 @@ Supports:
 * `required`
 * custom `error` message
 
-https://www.dartdocs.org/documentation/angel_framework/1.1.1/angel_framework/Parameter-class.html
+https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/Parameter-class.html
