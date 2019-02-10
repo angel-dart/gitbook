@@ -1,5 +1,6 @@
 * [Routing](basic-routing.md#routing)
 * [Route Parameters](basic-routing.md#route-parameters)
+  * [Parsing Parameters](basic-routing.md#parsing-parameters)
 * [`RegExp` Routes](basic-routing.md#regexp-routes)
 * [Mounting and Sub-Apps](basic-routing.md#sub-apps)
 * [Route Groups](basic-routing.md#route-groups)
@@ -23,7 +24,13 @@ app.patch('<path>', requestHandler);
 app.delete('<path>', requestHandler);
 ```
 
-Your `requestHandler` can be any Dart value, whether a function, or an object. See the [Requests and Responses](requests-and-responses.md#return-values) pages for detailed documentation.
+Your `requestHandler` should take the following form:
+
+```dart
+typedef FutureOr<dynamic> RequestHandler(RequestContext req, ResponseContext res);
+```
+
+Your `requestHandler` can return any Dart value, whether a function, or an object. See the [Requests and Responses](requests-and-responses.md#return-values) pages for detailed documentation.
 
 Route paths _do not_ have to begin with a forward slash, as leading and trailing slashes are stripped from route paths internally.
 
@@ -32,7 +39,7 @@ Route paths _do not_ have to begin with a forward slash, as leading and trailing
 Say you're building an API, or an MVC application. You typically want to serve the same view template on multiple paths, corresponding to different ID's. You can do this as follows, and all parameters will be available via `req.params`:
 
 ```dart
-app.get('/todos/:id', (RequestContext req, res) async => {'id': req.params['id']});
+app.get('/todos/:id', (eq, res) async => {'id': req.params['id']});
 ```
 
 Remember, route parameters _must_ be preceded by a colon \(':'\). Parameter names must start with a letter or underscore, optionally followed by letters, underscores, or numbers. Parameters will match any character except a forward slash \('/'\) in a request URI.
@@ -42,14 +49,18 @@ Examples:
 * `:id`
 * `:_hello`
 * `:param123`
+* `info_about_:username`
 
-## RegExp Routes
-
-You can also use a `RegExp` as a route pattern, but you may have to parse the URI yourself, if you need to access specific parameters.
+### Parsing Parameters
+With a special syntax, you can build routes that automatically parse parameters as `ints` or `doubles`:
 
 ```dart
-app.post(new RegExp(r'\/todos/([A-Za-z0-9]+)'), (req, res) async => "RegExp");
+app
+  ..get('/add/int:number', (req, res) => req.params['number'] * 3)
+  ..get('/multiply/double:number', (req, res) => req.params['number'] * 5.0);
 ```
+
+## RegExp Routes
 
 Route parameters can also have custom regular expressions, to remove the requirement of manual parsing. Simply enclose the regular expression in a set of parentheses following the parameter's name.
 
@@ -62,7 +73,7 @@ app.get(r'/number/:num([0-9]+(\.[0-9])?)', ...);
 You can `mount` routers, or `use` entire sub-apps.
 
 ```dart
-Angel app = new Angel();
+var app = new Angel();
 app.get('/', 'Hello!');
 
 var subRouter = new Router()..get('/', 'Subroute');
@@ -81,8 +92,9 @@ Routes can also be grouped together. Route parameters will be applied to sub-rou
 
 ```dart
 app.group('/user/:id', (router) {
-  router.get('/messages', (String id) => fetchUserMessages(id));
-  router.group('/nested', ...);
+  router
+    ..get('/messages', (String id) => fetchUserMessages(id))
+    ..group('/nested', ...);
 });
 ```
 
