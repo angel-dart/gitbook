@@ -111,3 +111,23 @@ app.use('/user', TypedService<User>(MongoService(db.collection("users"))));
 var service = app.findService('user'); // The user service
 var service = app.service<String, Map<String, dynamic>>('secret'); 
 ```
+
+## Additional Notes
+Important things to consider when writing your own service:
+
+* [mongo](https://github.com/angel-dart/mongo/blob/master/lib/mongo_service.dart) is a good reference implementation]
+* Services need only worry about handling `Map`s. Object serialization should be handled by `angel_serialize`, another serializer, or `TypedService`.
+* Allowing users to query the service via query string is optional (see `allowQuery`)
+* Allowing users to remove all entries is **optional**, and should be disabled by default
+  
+  * `DELETE /null` should trigger an evaluation of `allowRemoveAll`
+  * `Service.toId` will return `null` in these cases
+* Always return the most recent representation of the data
+  
+  * After `remove`, return the old item
+  * After modify/update, return what the item looks like in the database
+* `modify` and `update` are **not** interchangeable!
+  
+  * `modify` merges changes into an existing item
+  * `update` **overwrites** an existing item
+  * BOTH should create an item with the given ID if it does not already exist
