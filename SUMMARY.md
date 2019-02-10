@@ -14,7 +14,7 @@
     * [Request Lifecycle](guides/request-lifecycle.md)
     * [Middleware](guides/middleware.md)
     * [Controllers](guides/controllers.md)
-    * [Handling File Uploads](guides/file-uploads.md)
+    * [Parsing Request Bodies](guides/body-parsing.md)
     * [Using Plug-ins](guides/using-plug-ins.md)
     * [Rendering Views](guides/rendering-views.md)
     * [REST Client](https://github.com/angel-dart/client)
