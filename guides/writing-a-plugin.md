@@ -2,25 +2,26 @@
 
 [Guidelines](writing-a-plugin.md#guidelines)
 
-Writing a [plug-in](../the-basics/using-plug-ins)
+Writing a [plug-in](using-plug-ins.md)
 is easy. You can provide plug-ins as either functions, or classes:
 
 ```dart
-AngelConfigurer awesomeify() => (Angel app) async {
-  app.before.add((req, res) async {
-    req.write('This request was intercepted by an awesome plug-in.');
-    return false;
-  });
+AngelConfigurer awesomeify({String message = 'This request was intercepted by an awesome plug-in.'}) {
+  return (Angel app) async {
+    app.fallback((req, res) async => res.write(message));
+  };
 }
 
-class MyAwesomePlugin extends AngelPlugin {
+class MyAwesomePlugin {
   @override
-  Future call(Angel app) async {
+  Future<void> configureServer(Angel app) async {
     app.responseFinalizers.add((req, res) async {
-      res.headers['Be-Awesome'] = 'All the time';
+      res.headers['x-be-awesome'] = 'All the time :)';
     });
   }
 }
+
+await app.configure(MyAwesomePlugin().configureServer);
 ```
 
 ## Guidelines
@@ -30,16 +31,17 @@ class MyAwesomePlugin extends AngelPlugin {
 * Always need to be well-documented and thoroughly tested.
 * Make sure no other plugin already serves the purpose.
 * Use the provided Angel API's whenever possible. This will help your plugin resist breaking change in the future.
-* Try to get it [added to main organization](https://github.com/angel-dart/roadmap/blob/master/CONTRIBUTING.md).
-* Plugins should generally be small.
-* Plugins should _NEVER_ modify app configuration!!!
-  * i.e. Do _NOT_ set `app.lazyParseBodies`, `app.storeOriginalBuffer`, etc.
-* Stay away from `req.io` and `res.io` if possible. Using these will doom your plugin to a life of only working on HTTP servers. Future versions of Angel may be server-agnostic, and this will keep your plugin firmly lodged in the past.
-* If your plugin is development-only or production-only, it should automatically configure itself. Prefer [`app.isProduction`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/Angel/isProduction.html) to manually checking the environment for `ANGEL_ENV`.
-* Use `req.lazyBody()`, `req.lazyFiles()`, etc. if you are running in an `async` context. Otherwise, your plugin may crash applications that lazy-parse request bodies.
-* If you use `req.lazyQuery()`, refrain from using `forceParse`. Never force any additional side effects on the user.
+* Try to get it added to the `angel-dart` organization (ask in the chat).
+* Plugins should *generally* be small, as they usually serve just one purpose.
+* Plugins are allowed to modify app configuration.
+* Stay away from `req.rawRequest` and `res.rawResponse` if possible. This can restrict people from
+using your plugin on multiple platforms.
+* Avoid checking `app.isProduction`; leave that to user instead.
+* Always use `req.parseBody()` before accessing the request body.
 
 Finally, your plugin should expose common options in a simple way. For example, the \(deprecated\) [compress](https://github.com/angel-dart/compress) plugin has a shortcut function, `gzip`, to set up GZIP compression, whereas for any other codec, you would manually have to specify additional options.
+
+This can greatly aid readability, as there is simply less text to read in the most common cases.
 
 ```dart
 main() {
@@ -49,7 +51,7 @@ main() {
   app.responseFinalizers.add(gzip());
 
   // Easier than:
-  app.responseFinalizers.add(compress('gzip', GZIP));
+  app.responseFinalizers.add(compress('lzma', lzma));
 }
 ```
 
