@@ -36,7 +36,12 @@ Use `angel make` to scaffold common Dart files:
 * `angel make test`
 * `angel make plugin`
 * `angel make model`
+* `angel make model --orm`
 * `angel make controller`
+
+### Deployment helpers
+* `sudo -E angel deploy nginx -o /etc/sites-available/my_app.conf`
+* `sudo -E angel deploy systemd -o /etc/systemd/system/my_app.service`
 
 ## Renaming the Project
 To rename your project, and fix all references, run:
