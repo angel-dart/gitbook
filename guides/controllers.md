@@ -131,6 +131,6 @@ main() async {
 
 ## Next Up...
 
-1. How to [handle file uploads](https://medium.com/@thosakwe/building-a-simple-file-upload-app-with-angel-64938d4ddc61) with Angel
+1. How to [handle file uploads](file-uploads.md) with Angel
 2. [Using Angel Plug-ins](using-plug-ins.md)
 
