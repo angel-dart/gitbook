@@ -16,22 +16,22 @@ Services can also be filtered or reacted to with [service hooks](hooks.md).
 A service looks like this:
 
 ```dart
-class MyService extends Service {
+class MyService extends Service<String, Map<String, dynamic>> {
   // GET /
   // Fetch all resources. Usually returns a List.
   @override
-  Future index([Map params]);
+  Future<List<Map<String, dynamic>>> index([Map<String, dynamic> params]);
 
   // GET /:id
   // Fetch one resource, by its ID
   @override
-  Future read(id, [Map params]);
+  Future<Map<String, dynamic>> read(String id, [Map<String, dynamic> params]);
 
   // POST /
   // Create a resource. This endpoint should return
   // the created resource.
   @override
-  Future create(data, [Map params]);
+  Future<Map<String, dynamic>> create(Map<String, dynamic> data, [Map<String, dynamic> params]);
 
   // PATCH /:id
   // Modifies a resource. Clients can submit only the data
@@ -39,30 +39,36 @@ class MyService extends Service {
   // have only those fields changed. This endpoint should return
   // the modified resource.
   @override
-  Future modify(id, data, [Map params]);
+  Future<Map<String, dynamic>> modify(String id, Map<String, dynamic> data, [Map<String, dynamic> params]);
 
   // POST /:id
   // Overwrites a resource. The existing resource is completely
   // replaced by the new data. This endpoint should return the
   // new resource.
   @override 
-  Future update(id, data, [Map params]);
+  Future<Map<String, dynamic>> update(String id, Map<String, dynamic> data, [Map<String, dynamic> params]);
 
   // DELETE /:id
   // Deletes a resource. This endpoint should return the
   // deleted resource.
   @override
-  Future remove(id, [Map params]);
+  Future<Map<String, dynamic>> remove(String id, [Map<String, dynamic> params]);
 }
 ```
 
+There are meta-methods that default to delegating to the above:
+* `findOne`
+* `readMany`
+
+You can override these for your service, if it will improve performance.
+
 ### Service Parameters and Middleware
 
-You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP \(i.e., not over Websockets\), `req.query` or `req.body` is passed here \(`query` for `index`, `read` and `delete`, `body` for `create`, `update` and `modify`\). To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
+You might notice that each service method accepts an optional `Map` of parameters. When accessed via HTTP \(i.e., not over Websockets\), `req.query` or `req.bodyAsMap` is passed here \(`query` for `index`, `read` and `delete`, `bodyAsMap` for `create`, `update` and `modify`\). To pass custom parameters to a service, you should create a middleware to do so. `@Middleware` annotations can be prepended to service classes or service methods. For example, the following will pass `foo='bar'` to every method in the service:
 
 ```dart
 Future<bool> myMiddleware(RequestContext req, res) async {
-  req.query['foo'] = 'bar';
+  req.queryParameters['foo'] = 'bar';
   return true;
 }
 
@@ -86,30 +92,22 @@ class MyService extends Service {
 }
 ```
 
-`provider` will be a `Providers` class, whose `String via` will tell you where the service is being accessed from, i.e. `'rest'` or `'websocket'`.
+`provider` will be a `Providers` class, whose `String via` will tell you where the service is being accessed from, i.e. `'rest'`, `'graphql'` or `'websocket'`.
 
 ### Mounting Services
 
 As mentioned above, services extend `Routable`, so you can simply `app.use()` them. You can also supplement them with additional routes or middleware, placed _before_ the mounting of a service:
 
 ```dart
-app.get("/user/:id/todos", (id) => fetchUserTodos(id)));
+app.get("/user/:id/todos", ioc((id) => fetchUserTodos(id))));
 
 // Another way to apply a middleware to a service
-app.all("/user/*", 'some middleware', middleware: ['some', 'more', 'middleware']);
+app.all("/user/*", [someMiddleware], middleware: ['some', 'more', 'middleware']);
 
-app.use('/user', new TypedService<User>(new MongoService(db.collection("users"))));
-
-// Make a service global without exposing it to REST
-app.services['secret'] = new SecretService();
+app.use('/user', TypedService<User>(MongoService(db.collection("users"))));
 
 // Access app services. Returns a HookedService if there is one, otherwise just the plain service.
 // Leading and trailing slashes are ignored.
-var service = app.service('user'); // The user service
-var service = app.service('secret'); // Not exposed to REST, but can still be used easily
+var service = app.findService('user'); // The user service
+var service = app.service<String, Map<String, dynamic>>('secret'); 
 ```
-
-## Next Up...
-
-Reflectively serialize and deserialize data within services by wrapping them in a [`TypedService`](typedservice.md).
-
