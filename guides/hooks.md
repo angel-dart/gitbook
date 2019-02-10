@@ -99,12 +99,12 @@ class MyService extends Service {
 }
 ```
 
-## Bundled Hooks
+## `package:angel_hooks`
 
-There are several hooks shipped with the Angel framework: [https://www.dartdocs.org/documentation/angel\_framework/latest/angel\_framework.hooks/angel\_framework.hooks-library.html](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework.hooks/angel_framework.hooks-library.html)
+As of Angel 2, common hooks can be found in `package:angel_hooks`:
 
 ```dart
-import 'package:angel_framework/hooks.dart` as hooks;
+import 'package:angel_hooks/angel_hooks.dart` as hooks;
 
 main() {
   // ...
