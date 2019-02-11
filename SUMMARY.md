@@ -4,6 +4,11 @@
   * [2.0.0 Migration Guide](migration/migration-guide.md)
 * ORM
   * [About](orm/about.md)
+  * [Basic Functionality](orm/basic-functionality.md)
+  * [Relations](orm/relations.md)
+  * [Migrations](orm/migrations.md)
+  * [NoSQL](orm/nosql.md)
+  * [PostgreSQL](orm/postgresql.md)
 * Guides
     * [Getting Started](guides/getting-started.md)
     * [Basic Routing](guides/basic-routing.md)
