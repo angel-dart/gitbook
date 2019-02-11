@@ -16,9 +16,9 @@ abstract class _Greeting extends Model {
 }
 
 var service = MongoService(...);
-var mappedService = service.map(UserSerializer.fromMap, UserSerializer.toMap);
+var mappedService = service.map(GreetingSerializer.fromMap, GreetingSerializer.toMap);
 
-// Now you can get User instances.
-var user = await mappedService.read(id);
-print([user.text, user.attachedMoney]);
+// Now you can get Greeting instances.
+var greeting = await mappedService.read(id);
+print([greeting.text, greeting.attachedMoney]);
 ```
