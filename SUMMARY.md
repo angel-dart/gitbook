@@ -2,6 +2,8 @@
   * [Rationale - Why a new Version?](migration/rationale.md)
   * [Framework Changelog](https://github.com/angel-dart/framework/blob/master/CHANGELOG.md)
   * [2.0.0 Migration Guide](migration/migration-guide.md)
+* [ORM](orm/README.md)
+  * [About](orm/README.md)
 * Guides
     * [Getting Started](guides/getting-started.md)
     * [Basic Routing](guides/basic-routing.md)
