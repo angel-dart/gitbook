@@ -34,15 +34,18 @@ main() async {
 
 ### Execution Order
 
-Plugins are usually immediately invoked by `app.configure()`. However, you may run into certain plug-ins, such as [WebSocket support](https://github.com/angel-dart/websocket), that depend on other facilities already being available, or all of your [services](../services/service-basics.md) already being mounted. You can set aside a plug-in to be run just before server startup \(a call to `app.startServer()`\) by adding it to `app.justBeforeStart`, instead of directly calling `app.configure()`.
+Plugins are usually immediately invoked by `app.configure()`. However, you may run into certain plug-ins
+that depend on other facilities already being available, or all of your [services](ervice-basics.md) already being mounted. You can set aside a plug-in to be run just before server startupby adding it to `app.startupHooks`, instead of directly calling `app.configure()`.
 
 ```dart
-app.justBeforeStart.addAll([
+app.startupHooks.addAll([
   myPlugin(),
-  new AngelWebSocket(),
+  AngelWebSocket().configureServer,
   fooBarBazQuux()
 ]);
 ```
+
+Likewise, you can add hooks that run just before the app is shutdown, via `Angel.shutdownHooks`.
 
 ## Next Up...
 
