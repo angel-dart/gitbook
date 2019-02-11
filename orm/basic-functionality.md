@@ -11,7 +11,7 @@ To enable the ORM for a given model, simply add the `@orm` annotation to its def
 abstract class _Todo {
     bool get isComplete;
 
-    String get text;
+    String get text; 
 }
 ```
 
