@@ -8,7 +8,7 @@ Take, for example, the following class:
 
 ```dart
 @orm
-class _Pokemon extends Model {
+abstract class _Pokemon extends Model {
     String get nickName;
 
     int get level;
