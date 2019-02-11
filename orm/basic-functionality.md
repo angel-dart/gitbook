@@ -11,7 +11,10 @@ To enable the ORM for a given model, simply add the `@orm` annotation to its def
 abstract class _Todo {
     bool get isComplete;
 
-    String get text; 
+    String get text;
+
+    @Column(type: ColumnType.long)
+    int get score;
 }
 ```
 
@@ -24,6 +27,8 @@ class TodoQuery extends Query<Todo, TodoQueryWhere> {
     BooleanSqlExpressionBuilder get isComplete;
 
     StringSqlExpressionBuilder get text;
+
+    NumericSqlExpressionBuilder<int> get score;
 }
 ```
 
