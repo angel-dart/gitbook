@@ -9,29 +9,29 @@ Take, for example, the following class:
 ```dart
 @orm
 class _Pokemon extends Model {
-    String nickName;
+    String get nickName;
 
-    int level;
+    int get level;
 
-    int experiencePoints;
-
-    @belongsTo
-    PokemonTrainer trainer;
+    int get experiencePoints;
 
     @belongsTo
-    PokemonSpecies species;
+    PokemonTrainer get trainer;
 
     @belongsTo
-    PokemonAttack attack0;
+    PokemonSpecies get species;
 
     @belongsTo
-    PokemonAttack attack2;
+    PokemonAttack get attack0;
 
     @belongsTo
-    PokemonAttack attack3;
+    PokemonAttack get attack2;
 
     @belongsTo
-    PokemonAttack attack4;
+    PokemonAttack get attack3;
+
+    @belongsTo
+    PokemonAttack get attack4;
 }
 ```
 
