@@ -10,4 +10,5 @@ This website consists of multiple guides and pages about features within the fra
 as external links to YouTube videos, Pub packages, and Github repositories providing supplemental information.
 
 New to Angel? Read the getting started guide, and you'll be well on your way:
+
 https://docs.angel-dart.dev/v/2.x/guides/getting-started
