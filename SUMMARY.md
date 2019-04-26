@@ -24,7 +24,7 @@
     * [Parsing Request Bodies](guides/body-parsing.md)
     * [Using Plug-ins](guides/using-plug-ins.md)
     * [Rendering Views](guides/rendering-views.md)
-    * [Service Basics](guides/service-basics.md)
+    * [Service Basics](guides/services.md)
     * [REST Client](https://github.com/angel-dart/client)
     * [Testing](guides/testing.md)
     * [Error Handling](guides/error-handling.md)
