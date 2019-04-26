@@ -9,7 +9,7 @@
   * [Migrations](orm/migrations.md)
   * [NoSQL](orm/nosql.md)
   * [PostgreSQL](orm/postgresql.md)
-* Guides
+* Guides 
     * [Getting Started](guides/getting-started.md)
     * [Basic Routing](guides/basic-routing.md)
     * [Dependency Injection Patterns](https://thosakwe.com/dependency-injection-patterns-in-angel-2/)
