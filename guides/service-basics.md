@@ -1,5 +1,3 @@
-# Service-Basics
-
 * [Services](service-basics.md#services)
   * [Service Parameters and Middleware](service-basics.md#service-parameters-and-middleware)
   * [Mounting Services](service-basics.md#mounting-services)
