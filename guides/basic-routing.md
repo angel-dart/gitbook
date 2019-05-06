@@ -39,7 +39,7 @@ Route paths _do not_ have to begin with a forward slash, as leading and trailing
 Say you're building an API, or an MVC application. You typically want to serve the same view template on multiple paths, corresponding to different ID's. You can do this as follows, and all parameters will be available via `req.params`:
 
 ```dart
-app.get('/todos/:id', (eq, res) async => {'id': req.params['id']});
+app.get('/todos/:id', (req, res) async => {'id': req.params['id']});
 ```
 
 Remember, route parameters _must_ be preceded by a colon \(':'\). Parameter names must start with a letter or underscore, optionally followed by letters, underscores, or numbers. Parameters will match any character except a forward slash \('/'\) in a request URI.
