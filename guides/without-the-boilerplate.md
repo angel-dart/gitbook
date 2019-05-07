@@ -6,7 +6,7 @@ Any Dart project needs a project file, called `pubspec.yaml`. This file almost a
 
 ```yaml
 dependencies:
-    angel_framework: ^2.0.0-alpha
+    angel_framework: ^2.0.0
 ```
 
 You might also want to install packages such as `angel_static`, `angel_cache`, `angel_jael`, and `angel_cors`.

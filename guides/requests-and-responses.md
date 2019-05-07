@@ -22,7 +22,7 @@ Request handlers can return any Dart value. Return values are handled as follows
 * A `RequestHandler`: the returned handler will be executed.
 * A `Stream`: `toList` will be called, and then returned.
 * A `Future`: it will be awaited, and then returned.
-* Anything else: Whatever other Dart value you return will be serialized as a response. The default method is to encode responses as JSON, and to do so using reflection \(see `package:json_god`\). However, you can change a response's serialization method by setting `res.serializer = foo;`. If you want to assign the same serializer to all responses, globally set [`serializer`](https://pub.dartlang.org/documentation/angel_framework/latest/angel_framework/Angel/serializer.html) on your Angel instance. If you are only returning JSON-compatible Dart objects, like Maps or Lists, you might consider injecting `JSON.encode` as a serializer, to improve runtime performance (this is the default in `2.0`).
+* Anything else: Whatever other Dart value you return will be serialized as a response. The default method is to encode responses as JSON, using `json.encode`. However, you can change a response's serialization method by setting `res.serializer = foo;`. If you want to assign the same serializer to all responses, globally set [`serializer`](https://pub.dartlang.org/documentation/angel_framework/latest/angel_framework/Angel/serializer.html) on your Angel instance. If you are only returning JSON-compatible Dart objects, like Maps or Lists, you might consider injecting `JSON.encode` as a serializer, to improve runtime performance (this is the default in `2.0`).
 
 ### Other Parameters
 
