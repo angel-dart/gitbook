@@ -50,7 +50,7 @@ following contents:
 ```yaml
 name: hello_angel
 dependencies:
-    angel_framework: ^2.0.0-alpha
+    angel_framework: ^2.0.0
 ```
 
 Now, just run `pub get`, which will install the
@@ -59,7 +59,7 @@ Now, just run `pub get`, which will install the
 ```
 Resolving dependencies... (3.3s)
 + angel_container 1.0.0
-+ angel_framework 2.0.0-alpha.18
++ angel_framework 2.0.0
 + angel_http_exception 1.0.0+3
 (... more output omitted)
 Changed 33 dependencies!
