@@ -5,7 +5,7 @@
   * [Declaring Middleware](middleware.md#declaring-middleware)
   * [Named Middleware](middleware.md#named-middleware)
   * [Global Middleware](middleware.md#global-middleware)
-  * [`waterfall([...])`](middleware.md#waterfall)
+  * [`chain([...])`](middleware.md#chain)
   * [**Maintaining Code Readability](middleware.md#maintaining-code-readability)
 * [Next Up...](middleware.md#next-up)
 
@@ -94,7 +94,7 @@ app.use(MyCanonicalHandler().handleRequest);
 Take the following example. At first glance, it might not be very easy to read.
 
 ```dart
-app.get('/the-route', waterfall([
+app.get('/the-route', chain([
   banIp('127.0.0.1'),
   'auth',
   ensureUserHasAccess(),
