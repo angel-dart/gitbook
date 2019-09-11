@@ -16,6 +16,7 @@ The metadata on controller classes is processed via reflection _only once_, at s
 
 ```dart
 import 'package:angel_framework/angel_framework.dart';
+import 'package:angel_container/mirrors.dart';
 
 @Expose("/todos")
 class TodoController extends Controller {
@@ -31,7 +32,7 @@ class TodoController extends Controller {
 }
 
 main() async {
-  Angel app = new Angel();
+  Angel app = new Angel(reflector: MirrorsReflector());
   await app.configure(new TodoController().configureServer);
 }
 ```
