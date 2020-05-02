@@ -11,7 +11,7 @@
 Angel is inspired by Express, and such, request handlers in general resemble those from Express. Request handlers can return any Dart object \(see [how they are handled](requests-and-responses.md#return-values)\). Basic request handlers accept two parameters:
 
 * [`RequestContext`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/RequestContext-class.html) - Contains vital information about the client requesting a resource, such as request method, request body, IP address, etc. The request object can also be used to pass information from one handler to the next. 
-* [`ResponseContext`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/ResponseContext-class.html) - Allows you to send headers, write data, and more, to be sent to the client. To prevent a response from being modified by future handlers, call `res.end()` to prevent further writing.
+* [`ResponseContext`](https://www.dartdocs.org/documentation/angel_framework/latest/angel_framework/ResponseContext-class.html) - Allows you to send headers, write data, and more, to be sent to the client. To prevent a response from being modified by future handlers, call `res.close()` to prevent further writing.
 
 ### Return Values
 
