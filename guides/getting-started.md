@@ -112,7 +112,7 @@ listening at port `3000`.
 By adding *routes* to our server, we can respond to requests
 sent to different URL's.
 
-Let's a handler at the *root* of our server, and print
+Let's add a handler to the *root* of our server, and print
 a simple `Hello, world!` message.
 
 From this point, all new code needs to be added *before*
