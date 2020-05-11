@@ -5,6 +5,7 @@ It's very easy to setup a bare-bones Angel server.
 Any Dart project needs a project file, called `pubspec.yaml`. This file almost always contains a `dependencies` section, where you will install the Angel framework libraries.
 
 ```yaml
+name: hello_angel
 dependencies:
     angel_framework: ^2.0.0
 ```
@@ -16,7 +17,6 @@ Next, run `pub get` on the command line, or in your IDE if it has Dart support. 
 Next, create a file, `bin/main.dart`. Put this code in it:
 
 ```dart
-import 'dart:io';
 import 'package:angel_framework/angel_framework.dart';
 import 'package:angel_framework/http.dart';
 
@@ -26,7 +26,7 @@ main() async {
 
   app.get("/", (req, res) => "Hello, world!");
 
-  var server = await http.startServer();
+  await http.startServer('localhost', 3000);
   print("Angel server listening at ${http.uri}");
 }
 ```
