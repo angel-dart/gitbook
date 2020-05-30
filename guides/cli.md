@@ -1,6 +1,6 @@
 # Angel CLI
 
-The [Angel CLI](https://github.com/angel-dart/cli) is a friendly
+The [Angel CLI](https://github.com/angel-dart/angel/tree/master/packages/cli) is a friendly
 command line tool enabling quick scaffolding of common project
 constructs.
 
