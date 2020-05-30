@@ -100,7 +100,7 @@ app.group('/user/:id', (router) {
 
 ## Extended Documentation
 
-For more documentation on the router, see [its repository](https://github.com/angel-dart/route). [`package:angel_route`](https://pub.dartlang.org/packages/angel_route) has no `dart:io` or `dart:mirrors` dependency, and it also supports browser use \(both hash and push state\).
+For more documentation on the router, see [its folder](https://github.com/angel-dart/angel/tree/master/packages/route). [`package:angel_route`](https://pub.dartlang.org/packages/angel_route) has no `dart:io` or `dart:mirrors` dependency, and it also supports browser use \(both hash and push state\).
 
 ## Next Up...
 

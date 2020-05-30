@@ -55,4 +55,4 @@ guides, rather than technical documentation.
 For more in-depth documentation, see the actual
 `angel_orm` project on Github:
 
-https://github.com/angel-dart/orm
+https://github.com/angel-dart/angel/tree/master/packages/orm

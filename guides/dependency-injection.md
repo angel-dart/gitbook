@@ -1,6 +1,6 @@
 # Dependency-Injection
 
-Angel uses a [container hierarchy](https://github.com/angel-dart/container) for DI.
+Angel uses a [container hierarchy](https://github.com/angel-dart/angel/tree/master/packages/container) for DI.
 Dependency injection makes it easier to build applications with multiple moving parts, because logic can be contained in one location and reused at another place in your application.
 
 ## Adding a Singleton
