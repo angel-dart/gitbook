@@ -77,7 +77,7 @@ var app = new Angel();
 app.get('/', 'Hello!');
 
 var subRouter = new Router()..get('/', 'Subroute');
-app.mount('/sub', subApp);
+app.mount('/sub', subRouter);
 // Now, you can visit /sub and receive the message "Subroute"
 
 var subApp = new Angel()..get('/hello', 'world');
